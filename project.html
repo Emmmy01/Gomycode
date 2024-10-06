@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+   body {
+  background-color: rgb(47, 143, 47);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+form{
+    background: #fff;
+   max-width: 350px;
+   position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px #66666655;
+    padding: 30px 20px;
+    left: 50%;
+}
+h1{
+  font-size: 30px;
+  font-family: Verdana;
+  text-transform: uppercase;
+}
+
+ input{
+  border: 1px solid#777;
+  border-radius: 2px;
+  font-family: inherit;
+  padding: 10px;
+  display: block;
+  width: 95%; 
+  
+}
+button{
+  background-color: rgb(57, 248, 57);
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+  font-family: inherit;
+  font-size: 25px;
+  cursor: pointer;
+
+}
+p {
+  color: black;
+  font-size: 10px;
+  margin: auto;
+
+}
+button:hover{
+ background-color: green;
+}
+label{
+  font-size: 15px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color:rgb(100, 100, 100);
+  display: block;
+  align-items: center;
+  border-spacing: 200px;
+  
+}
+a{
+  text-align: left;
+  color:green;
+  font-family: inherit;
+  width: 95%;
+  text-decoration: none;
+}
+
+ 
+ 
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Log In</h1>
+      <div>
+        <label for="Username">Username</label>
+        <input type="text" id="Username" placeholder="Enter your Username" />
+      </div>
+      <div>
+        <label for="Password">Password</label>
+        <input
+          type="password"
+          id="Password"
+          placeholder="Enter your Password"
+        />
+      </div class='form-group'>
+      <span><a href="#">Forgot Password?</a></span>
+      <button type="submit">Log In</button>
+      <p>Don't have an account?<a href="project2.html">Sign Up</a></p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.background {
+  background: url(priscilla-du-preez-UmSug4DG168-unsplash.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7)), rgba(4, 9, 30, 0.7);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0px 1px 1px black;
+  filter: black;
+}
+.navbar{
+  
+  background-position: bottom;
+  background-size: cover;
+}
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+img {
+  mix-blend-mode: screen;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px, 0;
+  margin: auto;
+  justify-content: space-around;
+  
+  
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  margin-right: 10px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fcf9f9;
+  
+}
+.navbar ul li::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background:   green;
+  position: absolute;
+  transition: width 0.5s;
+  left: 0;
+  bottom: 0;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 22%;
+  color: white;
+  text-align: center;
+}
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+  color: green;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  color: white;
+  
+  
+}
+     
+
+nav .fa {
+  display: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Existing CSS ... */
+
+/*---Ourservice---*/
+.Ourservice {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+ 
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.po {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+ 
+  display: flex;
+  justify-content: space-between;
+}
+.services-col {
+  flex-basis: 31%;
+  background: rgb(226, 208, 227);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 13px 0px;
+  transition: 0.5s;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.services-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.work {
+  flex-wrap: wrap-reverse;
+  padding: 150px 8% 1px;
+  display: grid;
+  margin-top: 5%;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  background: transparent;
+}
+h3 {
+  color: rgb(11, 70, 48);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+}
+.nomal {
+  
+  gap: 1rem;
+}
+.nomal a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background: g;
+  background:rgb(11, 70, 48) ;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.nomal a:hover {
+  background: rgb(225, 229, 227);
+  color: rgb(11, 70, 48);
+ 
+}
+
+.Portfolio a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background: #fcf9f9;
+  border: 2px solid rgb(15, 130, 98);
+  color: rgb(11, 70, 48);
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.Portfolio a:hover {
+  background:rgb(11, 70, 48) ;
+  color: white;
+}
+.pol {
+  color: #777;
+  margin-bottom: 4rem;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+h4 {
+  text-align: center;
+  padding-left: 10px;
+}
+.Contact-img img {
+  
+  border-radius: 10px;
+  width: 100%;
+  height: 550px;
+  box-shadow: rgba(99, 99, 99, 0.2);
+   margin-bottom: 100px;
+  
+}
+#about-btn {
+  width: 150px;
+  height: 50px;
+  background:rgb(11, 70, 48) ;
+  border: 2px solid rgb(26, 152, 106) ;
+  color:rgb(234, 239, 237) ;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-align: center;
+}
+#about-btn:hover {
+  background: rgb(33, 167, 118);
+  color: white;
+}
+#about-btn a {
+  color:rgb(11, 70, 48) ;
+  text-align: center;
+}
+.Portfolio {
+  padding: 0px 8% 120px;
+  display: flex;
+  align-items: center;
+}
+.oo {
+  display: block;
+}
+.unknow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop {
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(11, 70, 48);
+  text-shadow: 0px 1px 1px black;
+  display: block;
+  text-align: center;
+}
+.portfolio-img {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.Portfolio a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background: #fcf9f9;
+  border: 2px solid rgb(39, 184, 131);
+  color:rgb(11, 70, 48) ;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.cover2 {
+  display: block;
+}
+.Portfolio2 a {
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background: #fcf9f9;
+  border: 2px solid rgb(32, 155, 110);
+  color: rgb(11, 70, 48);
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.img1 img {
+  width: 530px;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.5s;
+  cursor: pointer;
+  display: block;
+  gap: 0.5rem;
+}
+.img1 img:hover {
+  transform: translateY(-10px);
+}
+.photo {
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+  color: black;
+}
+.photo .box {
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  color: rgb(13, 62, 45);
+  margin-bottom: 50px;
+  padding: 50px;
+  transition: 0.5s;
+  width: 70px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.photo .box img {
+  height: 80px;
+  width: 80px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.photo .box:hover {
+  transform: translateY(-10px);
+  color: white;
+}
+.photo2 .Message:hover {
+  transform: translateY(-10px);
+  color: white;
+}
+.container {
+  padding: 0px 8% 120px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.oo {
+  display: block;
+  justify-content: right;
+}
+.box {
+  display: flex;
+}
+.omg img {
+  height: 600px;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+.general {
+  display: block;
+}
+.no1 {
+  display: flex;
+}
+.no2 {
+  display: flex;
+}
+.blog {
+  margin-top: 10%;
+  text-align: center;
+}
+.blog .box2 {
+  text-align: center;
+}
+.pou {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 0px; 
+  color: rgb(42, 214, 42);
+  display: block;
+  text-align: center;
+}
+.blog .img {
+  overflow: hidden;
+  position: relative;
+}
+.blog img {
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+.blog img:hover {
+  transform: scale(1.1);
+}
+.blog .box2 p {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.blog .box2 label {
+  font-size: 8px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  color: grey;
+}
+
+.box {
+  display: block;
+}
+.cg {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.blog a {
+  background: rgb(11, 70, 48);
+  padding: 15px 60px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: 0.5s;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.blog a:hover {
+  background: none;
+  border: 2px solid rgb(28, 145, 102);
+  color: black;
+}
+.head {
+  padding-top: 50px;
+}
+.ear {
+  padding-bottom: 20px;
+}
+.Message {
+  text-align: left;
+}
+.Call {
+  text-align: left;
+  display: block;
+  justify-content: left;
+}
+.contact3 {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact3 .head p {
+  font-weight: 300;
+}
+.kon {
+  font-size: 11px;
+  color: #777;
+}
+.col-4 {
+  padding: 60px 20px;
+  margin-top: 100px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.row3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.col-4 img {
+  width: 50px;
+  margin-top: 10%;
+  border-radius: 30%;
+}
+.col-4:hover {
+  transform: translateY(-10px);
+}
+
+.fa .fa-quote-left {
+  font-size: 34px;
+}
+h5 {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+.checked {
+  color:rgb(11, 70, 48) ;
+}
+.content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  background: green;
+  border: 2px solid rgb(3, 239, 137);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 500px;
+}
+.content a:hover {
+background: white;
+color: green;}
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+    padding-left: 70px;
+}
+.home img{
+  height: 900px;
+  width: 400px;
+}
+.omm img{
+ height: 350px;
+ width: 350px;
+ padding-right: 90px;
+ 
+}
+.omm{
+  transition: 0.9s;
+}
+
+.omm:hover{
+  transform: translateX(-20%);
+  
+}
+.omm2 img{
+  height: 220px;
+  width: 220px;
+  padding-top: 35px;
+}
+
+.omm2{
+  transition: 0.9s;
+}
+
+.omm2:hover{
+  transform: translateY(-20%);
+}
+.omm3 img{
+  height: 160px;
+  width: 160px;
+  padding-top: 50px;
+  padding-left: 90px;
+}
+
+.omm3{
+  transition: 0.9s;
+}
+
+.omm3:hover{
+  transform: translateX(20%);
+}
+.footer p {
+  color: #8a8a8a;
+  font-size: 10px;
+
+}
+
+.footer {
+  background: black;
+  color: #8a8a8a;
+  font-size: 14px;
+  margin-top: 100px;
+  height: 250px;
+}
+
+
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 0.5px;
+  margin-top: 50px;
+  
+}
+.copy{
+  text-align: center;
+   
+  
+}
+.lolo img{
+height: 90px;
+width: 120px;
+}
+
+.lolo{
+  margin-left: 90px;
+}
+.lolo p{
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.container2{
+  display: flex;
+  justify-content: space-between;
+}
+.lolo2 img{
+  
+  border-radius: 30px;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+  padding-top: 10px;
+
+padding-right: 5px;
+}
+.lolo2{
+  padding-top: 30px;
+  padding-right: 40px;
+  
+}
+.lolo2 p{
+  padding-top: 10px;
+  
+}
+h7{
+  color: white;
+  
+}
+.lolo1{
+  padding-top: 35px;
+}
+.lolo1 p {
+  padding-top: 15px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: gray;
+  margin-bottom: 10px;
+ 
+}
+.nav ul li {
+  list-style: none;
+  display: block;
+  position: relative;
+}
+
+.lolo1 {
+        padding-top: 35px;
+      }
+      .lolo1 p :hover {
+        color: green;
+      }
+      .lolo1 p {
+        padding-top: 15px;
+        transition: 0.5s;
+        color: #fff;
+      }
+      .lolo1 ul li a {
+        color: gray;
+        transition: 0.5s;
+      }
+      .lolo1 ul li a:hover {
+        color: #006400;
+      }
+      .lolo2 img:hover {
+        background: #006400;
+        border-radius: 25px;
+      }
+      .lolo2 img {
+        border-radius: 30px;
+        height: 35px;
+        justify-content: center;
+        width: 35px;
+        padding-top: 10px;
+        transition: 0.5s;
+      }
+      button{
+        background:  rgb(35, 179, 6);
+  border-radius: 25px;
+  border-bottom-right-radius: 25px;
+   margin-left: 1100px;
+   
+  color: rgb(235, 238, 235);
+  justify-content: center;
+  align-self: self-end;
+  display: flex;
+  margin-top: 50px;
+  
+
+  border: 2px solid green;
+  transition: 0.55s;
+  padding: 10px;
+}
+     button:hover {
+      background: green;
+      color: wheat;
+      }
+      
+/* Media query for screens with a max-width of 700px */
+@media (max-width: 700px) {
+  .background {
+  background: url(priscilla-du-preez-UmSug4DG168-unsplash.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7)), rgba(4, 9, 30, 0.7);
+  background-position: center;
+  background-size: cover;
+  width: 310%;
+  height: 310vh;
+  box-shadow: 0px 1px 1px black;
+  filter: black;
+}
+.content {
+  width: 310%;
+  position: absolute;
+  color: white;
+  text-align: center;
+  margin-top: 300px;
+}
+.content h1 {
+  font-size: 150px;
+  margin-bottom: 200px;
+  color: green;
+
+}
+.content p {
+
+
+  color: white;
+  font-size: 40px;
+  line-height: 50px;
+  
+}
+.content a {
+  display: flex;
+  
+  width: 400px;
+  height: 80px;
+  background: green;
+  border: 2px solid rgb(3, 239, 137);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 380px;
+  margin-top: 200px;
+  
+}
+.home{
+  margin-left: 100px;
+  flex-direction: column;
+}
+.home img{
+  width: 800px;
+  height: 400px;
+}
+.Ourservice {
+  width: 200%;
+
+  margin-left: 200px;
+  
+   
+}
+h1 {
+  font-size: 110px;
+  font-weight: 600;
+}
+.po {
+  color: #777;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 50px;
+  padding: 10px;
+  flex-direction: column;
+}
+.row {
+ 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.services-col {
+  flex-basis: 31%;
+  background: rgb(226, 208, 227);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 13px 0px;
+  transition: 0.5s;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.services-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+h3 {
+  color: rgb(11, 70, 48);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  line-height: 1;
+}
+.work {
+  
+  padding: 150px 8% 1px;
+  margin-top: 5%;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  display: flex;
+  margin-left: 750px;
+
+}
+h3 {
+  color: rgb(11, 70, 48);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  line-height: 1;
+  
+}
+.nomal {
+  flex-direction: column;
+  margin-right: -300px;
+
+  
+}
+.Contact-img img{
+  width: 900px;
+  height: 900px;
+}
+.Contact-img{
+  margin-right: -300px;
+}
+.pol{
+  font-size: 35px;
+  width: 1000px;
+  
+}
+.nomal a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 90px;
+  
+  background:rgb(11, 70, 48) ;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  flex-direction: column;
+  font-size: 30px;
+}
+.nomal a:hover {
+  background: rgb(225, 229, 227);
+  color: rgb(11, 70, 48);
+ 
+}
+.img1 img {
+  width: 550px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.5s;
+  cursor: pointer;
+  display: block;
+  gap: 0.5rem;
+}
+.img1-1-1 img {
+  width: 550px;
+  height: 900px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.5s;
+  cursor: pointer;
+  display: block;
+  gap: 0.5rem;
+}
+.img1 img:hover {
+  transform: translateY(-10px);
+}
+.photo {
+  background: none;
+  display: block;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+  color: black;
+  margin-left: 80px;
+  
+}
+.photo .box {
+  
+  box-shadow: 6px 6px 20px rgb(112, 108, 108);
+  color: rgb(9, 9, 10);
+  margin-bottom: 50px;
+  padding: 100px;
+  margin-top: 70px;
+  padding-top: 70px;
+  transition: 0.5s;
+  width: 70px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 200px;
+  padding-top: 70px;
+  
+  
+}
+.photo .box img {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding-right: 100px;
+  
+}
+.photo .box:hover {
+  transform: translateY(-10px);
+  color: rgb(10, 91, 23);
+  box-shadow: 20px 20px 20px rgb(10, 191, 46);
+}
+.photo2 .Message:hover {
+  transform: translateY(-10px);
+  color: white;
+}
+.container {
+  padding: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  padding-left: 500px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.oo {
+  display: block;
+  justify-content: right;
+}
+.box {
+  display: flex;
+}
+.omg img {
+  height: 700px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+.general {
+  display: block;
+ 
+}
+.no1 {
+  display: flex;
+  padding-bottom: 100px;
+  margin: auto;
+
+}
+h4{
+  font-size: 50px;
+  
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  white-space: nowrap;
+  
+
+}
+
+
+.box {
+  display: block;
+}
+.general img{
+  width: 100px;
+}
+.blog{
+  padding-top: 1150px;
+  
+  
+}
+.blog {
+  margin-top: 1%;
+  text-align: center;
+  padding-left: 120px;
+  width: 1000px;
+  
+}
+.blog .box2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.pou {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px; 
+  color: rgb(42, 214, 42);
+  display: block;
+  text-align: center;
+  
+  
+}
+.blog .img {
+
+  
+  display: flex;
+  flex-direction: column;
+
+}
+.blog img {
+  width: 700px;
+  height: 600px;
+  transition: 0.5s;
+  display: grid;
+  position: relative;
+  padding-left: 110px;
+  
+}
+.blog img:hover {
+  transform: scale(1.1);
+}
+.blog .box2 p {
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  text-align: start;
+  padding-left: 110px;
+}
+.blog .box2 label {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  color: grey;
+  padding-right: 100px;
+}
+
+.box2 {
+  display: block;
+
+
+}
+.pop{
+  font-size: 60px;
+  white-space: nowrap;
+}
+.cg {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+  flex-direction: column;
+
+}
+.blog a {
+  background: rgb(11, 70, 48);
+  padding: 15px 60px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  transition: 0.5s;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 200px;
+  height: 700px;
+}
+.blog a:hover {
+  background: none;
+  border: 2px solid rgb(28, 145, 102);
+  color: black;
+}
+.kon {
+  font-size: 25px;
+  color: #777;
+}
+.col-4 {
+  padding: 60px 20px;
+  margin-top: 100px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+  justify-content: space-between;
+  margin-left: 10px;
+  width: 700px;
+  height: 300px;
+  padding-bottom: 150px;
+  margin-right: 0px;
+}
+.row3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-left: 100px;
+  width: 1000px;
+}
+.col-4 img {
+  width: 70px;
+  margin-top: 10%;
+  border-radius: 30px;
+}
+.col-4:hover {
+  transform: translateY(-10px);
+}
+
+.fa .fa-quote-left {
+  width: 40px;
+}
+h5 {
+  font-weight: 600;
+  color: #555;
+  font-size: 26px;
+}
+.checked {
+  color:rgb(11, 70, 48) ;
+  font-size: 30px;
+}
+.clon{
+  font-size: 30px;
+}
+.footer hr {
+          border: none;
+          background: #b5b5b5;
+          height: 0.5px;
+        }
+        .copy {
+          text-align: center;
+        }
+        .lolo img {
+          height: 90px;
+          width: 120px;
+        }
+
+        .lolo {
+          margin-left: -90px;
+        }
+        .lolo p {
+          padding-left: -20px;
+          margin-bottom: 10px;
+        }
+
+        .container2 {
+          display: flex;
+          justify-content: space-between;
+        }
+        .lolo2 img {
+          border-radius: 30px;
+          height: 35px;
+          justify-content: center;
+          width: 35px;
+          padding-top: 2px;
+
+          padding-right: 5px;
+        }
+        .lolo2 {
+          padding-top: 33px;
+          padding-left: 50px;
+        }
+        .lolo2 p {
+          padding-top: 20px;
+        }
+        h7 {
+          color: white;
+        }
+        .lolo1 {
+          padding-top: 35px;
+          padding-left: 30px;
+        }
+        .lolo1 p {
+          padding-top: 15px;
+          padding-left: 30px;
+        }
+        .footer {
+          background: black;
+          color: #8a8a8a;
+          font-size: 14px;
+          margin-top: 100px;
+          height: 250px;
+          margin-top: 100px;
+          padding: 100px;
+          padding-left: 1000px;
+          padding-top: 1000px;
+        
+        }
+        .pictures h3 {
+          font-size: 15px;
+          text-align: center;
+
+          padding: 3px;
+          margin: 5px;
+        }
+        .pic2 {
+          display: flex;
+          justify-content: center;
+          padding-top: 30px;
+          background: none;
+        }
+        .pictures img {
+          height: 140px;
+          width: 170px;
+
+          margin: 10px;
+          border-radius: 10px;
+        }
+        .pictures {
+          content: "";
+          transition: 0.5s;
+          border: 3px solid rgb(221, 219, 219);
+          border-top: none;
+          border-right: none;
+          border-left: none;
+        }
+        .pictures:hover {
+          transform: translateY(-2%);
+          background: rgb(190, 193, 190);
+        }
+        .toggle-menu {
+          color: #fff;
+          display: flex;
+          overflow: hidden;
+          margin-right: 10px;
+        }
+}                                   
+</style>
+   
+  </head>
+  <body>
+    <section>
+    <div class="background">
+      <div class="navbar">
+        <img src="logo80.png" class="logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="docaboutus.html">About us</a></li>
+          <li><a href="tour.html">Interior Tour</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="connect2.html">Contact us</a></li>
+          <li><a href="docaccount.html">Account</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+
+    <div class="content">
+      <h1>DESIGN YOUR HOUSE</h1>
+      <p>
+        Find your perfect match with us! Enjoy a user-friendly search
+        experiencre, expert market knowlegde, and exceptional customer service.
+        <br />
+        Your dream home awaits-start your search today!
+      </p>
+      <a href="tour.html"> Explore Now &#8594; </a>
+    </div>
+    <div class="home">
+      <div class="omm"><img src="undraw_relaxing_at_home_re_mror.svg" ></div>
+     
+    </div>
+            
+    <section class="Ourservice">
+      <h1>Our Services</h1>
+      <p class="po">Your Vision,Our Expertise</p>
+
+      <div class="row">
+        <div class="services-col">
+          <h3>Interior Design</h3>
+          <p class="po">
+            Transform your space with our personalized interior design services,
+            including space planning, color schemes, furniture selection, and
+            more
+          </p>
+        </div>
+        <div class="services-col">
+          <h3>Space Planning</h3>
+          <p class="po">
+            Optimize your space usage with our expert space planning services,
+            ensuring a functional and efficient layout.
+          </p>
+        </div>
+        <div class="services-col">
+          <h3>Architecture</h3>
+          <p class="po">
+            Our architectural services include designing and planning buildings
+            and structures that meet your unique needs.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="Contact-img"><img src="ggg.jpeg" alt="" /></div>
+      <div class="nomal">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+       <lord-icon
+        src="https://cdn.lordicon.com/laqlvddb.json"
+        trigger="hover"
+        colors="primary:#121331,secondary:#0a5c15"
+        style="width:250px;height:250px">
+        </lord-icon>
+        <h3>We the art of stylish living stylishly</h3>
+        <p class="pol">
+          Ready to transform your space and unlock its full potential? <br>At
+          DreamSpace Design, we believe that every room has a story to tell and
+          every client has a unique vision to bring to life. 
+           Our team of expert
+          designers is dedicated to listening, creating, and delivering
+          personalized solutions that exceed your expectations. From
+          conceptualization to completion, we'll guide you through a seamless
+          design process that's tailored to your needs, style, and budget.
+          Whether you're looking to revamp a single room or your entire home,
+          we'll help you create a space that's not only beautiful but also
+          functional and reflective of your personality.Take the first step
+          towards turning your dream space into a reality. Explore our services,
+          get inspired by our portfolio, and let's start creating a space that
+          tells your story. We can't wait to hear from you and bring your vision
+          to life!"
+        </p>
+        <a href="docaboutus.html">Read more</a>
+      </div>
+    </section>
+    
+     <div class="cover2">
+      <section>
+        <div class="Portfolio">
+         <div class="portfolio-img">
+          <div class="img1 img1-1-1">
+            <img src="on.jpeg" alt="" />
+          </div>
+          <div class="img1">
+            <img src="tolu.jpeg" alt="" />
+            <img src="mumu.jpeg" alt="" />
+          </div>
+         </div>
+        </div>
+      
+      </section>
+    <section class="photo">
+      <div class="container">
+        <div class="left">
+          <div class="omg">
+            <img src="dee.jpg" alt="" />
+          </div>
+        </div>
+        <div general>
+          <div class="no1">
+            <div class="icon">
+              <div class="box">
+              <div class="com"> <img src="nope2.png"  /></div>
+                <h4>House Decor</h4>
+              </div>
+            </div>
+            <div class="icon">
+              <div class="box">
+                <img src="nope.png" alt="" />
+                <h4>Seat Decor</h4>
+              </div>
+            </div>
+          </div>
+          <div class="no2">
+            <div class="icon">
+              <div class="box">
+                <img src="lightbulb.png" alt="" />
+                <h4>Instutive idea</h4>
+              </div>
+            </div>
+            <div class="icon">
+              <div class="box">
+                <img src="nope3.png" alt="" />
+                <h4>Window Decor</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="Social">
+        <h3 class="pop">Blog Posts</h1>
+        <p class="pou">News & Update</p>
+      </div>
+      <div class="cg">
+        <div class="box2">
+          <div class="img">
+          <img src="house.jpg" alt="" /></div>
+          <div class="tt">
+            <label>30,September 2024</label>
+            <p>
+              Modern marvel: The sleek,<br> curved lines of the 'Oceanview <br> Tower' in downtown Los Angeles.
+            </p>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="img">
+          <img src="jboy2.jpg" alt="" /></div>
+          <div class="tt">
+            <label>16,August 2023</label>
+            <p>
+              Modern marvel: The sleek,<br> curved lines of the 'Oceanview <br> Tower' in downtown Los Angeles.
+            </p>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="img">
+          <img src="jboy1.jpg" alt="" /></div>
+          <div class="tt">
+             <label>11,May 2023</label>
+            <p>
+              Modern marvel: The sleek,<br> curved lines of the 'Oceanview <br> Tower' in downtown Los Angeles.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="ear">
+      <a href="blog.html">View All Post</a></div>
+    </section>
+      <div class="testimonial">
+        <div class="small-container">
+          <div class="row3">
+            <div class="col-4">
+              <span class="fa fa-quote-left checked"></span>
+              <p class="kon">
+                Haven's attention to detail  and <br> commitment 
+                to customer  satisfaction are <br> unparalleled.
+                 They turned my dream <br> kitchen into a reality! this is <br>
+                 now my favorite space!
+              </p>
+              <div>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star clon"></p>
+              </div>
+              <img src="user-1.png" />
+              <h5>San Parker</h5>
+            </div>
+            <div class="col-4">
+              <span class="fa fa-quote-left checked"></span>
+  
+              <p class="kon">
+                I was hesitant about online <br> design services,
+                 but  Haven's team  made <br> the process seamless
+                  and enjoyable. <br> My new home office is <br>now my favorite space!
+              </p>
+              <div >
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+              </div>
+              <img src="user-2.png" />
+              <h5>Mike Smith</h5>
+            </div>
+            <div class="col-4">
+              <span class="fa fa-quote-left checked"></span>
+              <p class="kon">
+                Haven transformed my living <br> room into a stunning oasis! 
+                Their <br>expert designers listened <br> attentively and delivered a 
+                customized <br> plan that exceeded my expectations
+              </p>
+              <div >
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+              </div>
+              <img src="user-3.png" />
+              <h5>Mabel Joe</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    <button id="scroll-to-top">  Top &#8593;</button>
+    <script>const scrollToTopButton = document.getElementById('scroll-to-top');
+
+      scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      
+      
+      </script>
+   
+      <div class="footer">
+        <div class="container2">
+          <div class="lolo">
+            <img src="logo80.png" alt="">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Alias, natus quia 
+            perferendis corporis <br> blanditiis cupiditate ipsam tempora sunt provident</p> 
+          </div>
+          <div class="lolo1">
+            <h7>USEFUI LINKS</h7>
+            <div class="nav">
+              <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="blog.html">Blog Post </a></li>
+                <li><a href="#">Return Policy </a></li>
+                <li><a href="#">Join Affiliate </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="lolo2">
+           <h7>FOLLOW US</h7>
+           <p>Yes, we are social</p>
+      
+           <img src="icons8-instagram-48.png" alt="">
+           <img src="icons8-pinterest-48.png" alt="">
+           <img src="icons8-facebook-48.png" alt="">
+          
+          </div>
+        </div>
+        <hr />
+        <br> 
+        <p class="copy">Copyright 2024 - Emmanuel Jerry <br> kunkun</p></div>
+</div>
+    
+  </body>
+</html>

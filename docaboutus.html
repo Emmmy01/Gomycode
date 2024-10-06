@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+      header { 
+        font-size: 75px;
+  color:  rgb(11, 70, 48);
+  border:      rgb(11, 70, 48) 3px solid;
+  border-radius: 25px;
+      }
+      .about {
+        transition: 0.8s;
+        margin-top: 50px;
+        background: url(jboy1.jpg);
+        background-position: center;
+      }
+      .ui {
+        color: rgb(20, 19, 19);
+        font-size: 15px;
+       
+        padding-left: 50px;
+        padding-top: 20px;
+      }
+
+      .OurMission {
+        display: flex;
+        background: wheat;
+        padding: 150px;
+        box-shadow: 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 40px black;
+        justify-content: center;
+        transition: 0.8s;
+        margin-left: 50px;
+        margin-right: 150px;
+        border-radius: 20px;
+        border-bottom: 2px solid black;
+      }
+      .OurMission {
+        color: rgb(7, 5, 5);
+      }
+      .OurMission:hover {
+        transform: translateY(-10px);
+      }
+      .Mission h1 {
+        border-bottom: 3px solid   rgb(11, 70, 48);
+        font-size: 30px;
+        display: flex;
+        
+      }
+      .Vision h1 {
+        border-bottom: 3px solid rgb(11, 70, 48);
+        font-size: 30px;
+        display: flex;
+      }
+      .OurVision {
+        display: flex;
+        background: url(dominic-kurniawan-suryaputra-VmX2_5fe12Y-unsplash.jpg);
+        background-position: center;
+        padding: 150px;
+        margin-top: 5px;
+        box-shadow: 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 40px black;
+        justify-content: center;
+        transition: 0.8s;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 50px;
+        margin-left: 150px;
+        border-radius: 20px;
+        border-bottom: 2px solid black;
+      }
+      .OurVision {
+        color: white;
+      }
+      .onnn {
+        color: white;
+        font-size: 13px;
+     
+        padding-left: 25px;
+      
+        padding-top: 20px;
+        font-size: 15px;
+      }
+      .OurVision:hover {
+        transform: translateY(-10px);
+      }
+      .OurStory {
+        display: flex;
+        background: wheat;
+        padding: 150px;
+        box-shadow: 40px black;
+        box-shadow: 40px black;
+     justify-content: center;
+        transition: 0.8s;
+        margin-top: 5px;
+        border-bottom: 2px solid black;
+        margin-left: 50px;
+        margin-right: 150px;
+        border-radius: 20px;
+      }
+      .OurStory:hover {
+        transform: translateY(-10px);
+      }
+      .Story h1 {
+        border-bottom: 3px solid rgb(11, 70, 48);
+        font-size: 30px;
+        display: flex;
+      }
+      .OurStory h1 {
+        color: rgb(2, 2, 2);
+      }
+      .pot {
+        color: rgb(14, 14, 14);
+        font-size: 13px;
+   
+       
+        padding-top: 20px;
+        font-size: 15px;
+        padding-left: 35px;
+      }
+      .OurValues {
+        display: flex;
+        background: whitesmoke;
+        padding: 150px;
+        box-shadow: 40px black;
+        transition: 0.8s;
+        margin-top: 5px;
+        border-bottom: 2px solid black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-left: 180px;
+        justify-content: center;
+        margin-right: 50px;
+        margin-left: 150px;
+        border-radius: 20px;
+        border-bottom: 2px solid black;
+      }
+      .OurValues:hover {
+        transform: translateY(-10px);
+      }
+      .Values h1 {
+        border-bottom: 3px solid  rgb(11, 70, 48);
+        font-size: 30px;
+        display: flex;
+      }
+      .OurValues h1 {
+        color: rgb(2, 2, 2);
+      }
+      .pot {
+        color: rgb(14, 14, 14);
+        
+   
+        gap: 20px;
+        padding-top: 20px;
+        font-size: 15px;
+        padding-left: 35px;
+      }
+
+      .k {
+        color: rgb(10, 3, 5);
+        font-style: unset;
+        font-size: 13px;
+    
+      }
+      .aboutimg {
+        display: flex;
+        justify-content: center;
+        background: white;
+        border-bottom: 2px solid white;
+      
+        padding: 50px;
+      }
+      .usimg h4 {
+        color: rgb(2, 2, 2);
+    
+      }
+      .note {
+        text-align: center;
+        font-size: 30px;
+        padding: 150px;
+        color: black;
+      }
+
+      .usimg:hover {
+        filter: grayscale(0);
+      }
+      .usimg {
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: 0.8s;
+      }
+      .logo {
+  width: 120px;
+  cursor: pointer;
+}
+img {
+  mix-blend-mode: screen;
+}
+
+.background{
+  background: url(spacejoy-trG8989WjFA-unsplash[1].jpg);
+  background-position: bottom;
+  background-size: cover;
+  margin-block-end: -50px;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fcf9f9;
+ 
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.footer p {
+  color: #8a8a8a;
+  font-size: 10px;
+
+}
+
+.footer p {
+  color: #8a8a8a;
+  font-size: 10px;
+
+}
+
+.footer {
+  background: black;
+  color: #8a8a8a;
+  font-size: 14px;
+  margin-top: 100px;
+  height: 250px;
+  margin-top: 100px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: gray;
+  margin-bottom: 10px;
+ 
+}
+.nav ul li {
+  list-style: none;
+  display: block;
+  position: relative;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 0.5px;
+  margin-top: 50px;
+  
+}
+.copy{
+  text-align: center;
+   
+  
+}
+.lolo img{
+height: 90px;
+width: 120px;
+}
+
+.lolo{
+  margin-left: 90px;
+}
+.lolo p{
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.container2{
+  display: flex;
+  justify-content: space-between;
+}
+.lolo2 img{
+  
+  border-radius: 30px;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+  padding-top: 10px;
+
+padding-right: 5px;
+}
+.lolo2{
+  padding-top: 30px;
+  padding-right: 40px;
+}
+.lolo2 p{
+  padding-top: 10px;
+}
+h7{
+  color: white;
+}
+.lolo1{
+  padding-top: 35px;
+}
+.lolo1 p {
+  padding-top: 15px;
+}
+.note{
+  background: url(spacejoy-trG8989WjFA-unsplash[1].jpg);
+  background-position: center;
+  background-size: cover;
+    margin-top: 55px;
+  
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px, 0;
+  margin: auto;
+  width: 100%;
+  box-shadow: 3px 3px 5px black;
+  
+}
+.navbar{
+  background: rgb(11, 70, 48);
+  background-position: bottom;
+  background-size: cover;
+
+  box-shadow: 3px 3px 5px black;
+}
+
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fcf9f9;
+ 
+}
+.navbar ul li::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: rgb(142, 205, 182);
+  position: absolute;
+  transition: width 0.5s;
+  left: 0;
+  bottom: 0;
+}
+.lolo1 {
+        padding-top: 35px;
+      }
+      .lolo1 p :hover {
+        color: green;
+      }
+      .lolo1 p {
+        padding-top: 15px;
+        transition: 0.5s;
+        color: #fff;
+      }
+      .lolo1 ul li a {
+        color: gray;
+        transition: 0.5s;
+      }
+      .lolo1 ul li a:hover {
+        color: #006400;
+      }
+      .lolo2 img:hover {
+        background: #006400;
+        border-radius: 25px;
+      }
+      .lolo2 img {
+        border-radius: 30px;
+        height: 35px;
+        justify-content: center;
+        width: 35px;
+        padding-top: 10px;
+        transition: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <div class="background">
+          <div class="navbar">
+            <img src="logo80.png" class="logo" />
+            <ul>
+              <li><a href="doc.html">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="tour.html">Property Tour</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="connect2.html">Contact us</a></li>
+              <li><a href="docaccount.html">Account</a></li>
+            </ul>
+          </div>
+        </div>
+    <div class="note">
+      <header>About us</header>
+      
+    </div>
+      <section class="OurMission">
+        <div class="Mission">
+          <h1>Our <br> Mission</h1>
+        </div>
+        <div class="Mission-row">
+          <p class="ui">
+            At Haven, our mission is to empower individuals to create spaces that inspire, relax,and rejuvenate. We strive to:
+             <br>
+          - Provide exceptional interior design services that exceed client expectations  <br>
+           - Foster a collaborative design process that listens to your needs and preferences  <br>
+           - Make interior design accessible to everyone, regardless of budget or style <br>
+        </div>
+      </section>
+      <section class="OurVision">
+        <div class="Vision">
+          <h1>Our Vision</h1>
+        </div>
+        <div class="Vision-row">
+          <p class="onnn">
+            Our vision is to become the go-to interior design destination, recognized for our commitment to quality, creativity, and customer satisfaction. We aim to:
+            <br> 
+
+
+            - Continuously innovate and expand our design offerings to meet evolving client needs <br> 
+            - Build long-lasting relationships with our clients, providing ongoing support and guidance <br> 
+            - Create spaces that enhance well-being, productivity, and happiness
+            
+            
+          </p>
+        </div>
+      </section>
+     
+      <section class="OurStory">
+        <div class="Story">
+          <h1>Our Story</h1>
+        </div>
+        <div class="Story-row">
+          <p class="pot">
+            Welcome to Haven, your partner in transforming spaces into breathtaking sanctuaries. Our journey began with a passion for  helping individuals create homes that reflect their unique style and personality.
+             <br> 
+
+            Founded in 2023, Haven was born out of a desire to make interior design accessible, affordable, and enjoyable for everyone. Our team of expert designers and space planners came together to provide personalized solutions for turning houses into homes.
+        
+            
+            
+
+          </p>
+          </p>
+        </div>
+      </section>
+      <section class="OurValues">
+        <div class="Values">
+          <h1>Our <br> Values</h1>
+        </div>
+        <div class="Values-row">
+          <p class="pot">
+            At Haven, our values and our system are buit to bring a confortable life to you.We bring to you:
+            - Creativity: We believe in unlocking the full potential of every space <br> 
+- Personalization: We listen to your unique needs and preferences <br> 
+- Quality: We deliver exceptional design solutions that stand the btest of time <br> 
+- Sustainability: We incorporate eco-friendly practices and materials whenever possible
+
+
+
+            
+
+          </p>
+          </p>
+        </div>
+      </section> 
+       <div class="Values">
+        <h1>Meet Our Team</h1>
+      </div>
+     
+      <div class="aboutimg">
+        <div class="usimg">
+          <img src="user-1.png" alt="" />
+          <h4>Victoria Ugo</h4>
+          <p>Founder</p>
+        </div>
+        <div class="usimg">
+          <img src="user-2.png" alt="" />
+          <h4>John Mick</h4>
+          <p >Senior Designer</p>
+        </div>
+        <div class="usimg">
+          <img src="user-3.png" alt="" />
+          <h4>Elina James</h4>
+          <p >Design Consultant</p>
+        </div>
+      </div>
+         
+      <div class="footer">
+        <div class="container2">
+          <div class="lolo">
+            <img src="logo80.png" alt="">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Alias, natus quia 
+            perferendis corporis <br> blanditiis cupiditate ipsam tempora sunt provident</p> 
+          </div>
+          <div class="lolo1">
+            <h7>USEFUI LINKS</h7>
+            <div class="nav">
+              <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Blog Post </a></li>
+                <li><a href="#">Return Policy </a></li>
+                <li><a href="#">Join Affiliate </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="lolo2">
+           <h7>FOLLOW US</h7>
+           <p>Yes, we are social</p>
+
+           <img src="icons8-instagram-48.png" alt="">
+           <img src="icons8-pinterest-48.png" alt="">
+           <img src="icons8-facebook-48.png" alt="">
+   
+          </div>
+        </div>
+        <hr />
+        <br> 
+        <p class="copy">Copyright 2024 - Emmanuel Jerry <br> kunkun</p></div>
+</div>
+
+   
+
+
+</div>
+  </body>
+</html>

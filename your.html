@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up Screen</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 98vh;
+        font-family: sans-serif;
+        margin: 0;
+      }
+      section.login {
+        background: rgb(233, 165, 138), white, rgb(233, 165, 138);
+        width: 600px;
+        height: 400px;
+        background-size: 400px;
+        background-position: center;
+
+        display: flex;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 15px #66666655;
+        overflow: hidden;
+        border: none;
+      }
+      .dot {
+        justify-content: center;
+        padding-right: 100px;
+      }
+
+      form {
+        background: white;
+        box-sizing: border-box;
+        width: 50%;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 40px;
+        justify-content: center;
+        text-align: center;
+        padding-left: 30px;
+      }
+
+      h1 {
+        font-size: 0px;
+        text-transform: uppercase;
+        color: orangered;
+      }
+
+      label {
+        font-size: 10px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: rgb(100, 100, 100);
+        display: flex;
+        align-items: center;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #333;
+        padding: 10px 0;
+        outline: none;
+      }
+
+      input:focus {
+        border-bottom: 2px solid orangered;
+      }
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 25px;
+        background: orangered;
+        border: 2px solid orangered;
+        color: white;
+        font-weight: bold;
+        border-radius: 25px;
+        transition: 0.5s;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      button:hover {
+        background: rgb(83, 25, 4);
+        color: white;
+      }
+
+      p {
+        color: #100f0fc7;
+        font-size: 12px;
+        margin: auto;
+        height: -30px;
+        float: 100px;
+      }
+
+      a {
+        color: rgb(204, 3, 3);
+        text-decoration: none;
+        margin-top: 50px;
+        font-size: 16px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .form-group {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: -10px;
+        justify-content: center;
+      }
+
+      .form-group span {
+        margin-left: auto;
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Add some space between the icon and text */
+        margin-top: -50px; /* Adjust margin as needed */
+      }
+
+      .link i {
+        font-size: 11px; /* Adjust the icon size as needed */
+        margin-top: 50px;
+      }
+
+      .link a {
+        color: #cb0c0c;
+        text-decoration: none;
+        font-size: 16px; /* Adjust the font size as needed */
+      }
+
+      .link a:hover {
+        text-decoration: underline;
+      }
+      .login img {
+        height: 300px;
+        width: 400px;
+        padding-top: 50px;
+      }
+      .login hr {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="log in">
+      <section class="login">
+        <form>
+          <h1>Sign In</h1>
+          <div>
+            <label for="First Name">First Name</label>
+            <input type="text" id="First Name" placeholder="Enter First Name" />
+          </div>
+          <div>
+            <label for="Last Name">Last Name</label>
+            <input type="text" id="Last Name" placeholder="Enter Last Name" />
+          </div>
+          <div>
+            <label for=" Email">Email</label>
+            <input type="text" id=" Email" placeholder="Enter Email" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+          </div>
+          <div>
+            <label for="Confirm Password">Confirm Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <button type="submit">Sign In</button>
+          <span
+            >Already have an account?<a href="contact.html">
+              <br />Log In</a
+            ></span
+          >
+        </form>
+        <hr />
+        <img src="image1.png" class="dot" />
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .logo {
+        width: 120px;
+        cursor: pointer;
+      }
+      img {
+        mix-blend-mode: screen;
+      }
+
+      .background {
+        background: rgb(11, 70, 48);
+        background-position: bottom;
+        background-size: cover;
+        margin-block-end: -50px;
+      }
+      .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: #fcf9f9;
+      }
+      .navbar ul li::after {
+        content: "";
+        height: 2px;
+        width: 0%;
+        background: rgb(142, 205, 182);
+        position: absolute;
+        transition: width 0.5s;
+        left: 0;
+        bottom: 0;
+      }
+      .navbar ul li:hover::after {
+        width: 100%;
+      }
+      .footer p {
+        color: #8a8a8a;
+        font-size: 10px;
+      }
+
+      .footer {
+        background: black;
+        color: #8a8a8a;
+        font-size: 14px;
+        margin-top: 100px;
+        height: 250px;
+        margin-top: 100px;
+      }
+
+      .nav ul li a {
+        text-decoration: none;
+        color: gray;
+        margin-bottom: 10px;
+      }
+      .nav ul li {
+        list-style: none;
+        display: block;
+        position: relative;
+      }
+
+      .footer hr {
+        border: none;
+        background: #b5b5b5;
+        height: 0.5px;
+        margin-top: 50px;
+      }
+      .copy {
+        text-align: center;
+      }
+      .lolo img {
+        height: 90px;
+        width: 120px;
+      }
+
+      .lolo {
+        margin-left: 90px;
+      }
+      .lolo p {
+        padding-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      .container2 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .lolo2 img {
+        border-radius: 30px;
+        height: 35px;
+        justify-content: center;
+        width: 35px;
+        padding-top: 10px;
+        transition: 0.5s;
+      }
+      .lolo2 img:hover {
+        background: #006400;
+        border-radius: 25px;
+      }
+      .lolo2 {
+        padding-top: 30px;
+        padding-right: 40px;
+      }
+
+      h7 {
+        color: white;
+      }
+      .lolo1 {
+        padding-top: 35px;
+      }
+      .lolo1 p :hover {
+        color: green;
+      }
+      .lolo1 p {
+        padding-top: 15px;
+        transition: 0.5s;
+        color: #fff;
+      }
+      .lolo1 ul li a {
+        color: gray;
+        transition: 0.5s;
+      }
+      .lolo1 ul li a:hover {
+        color: #006400;
+      }
+      .note {
+        background: url(spacejoy-trG8989WjFA-unsplash[1].jpg);
+        background-position: center;
+        background-size: cover;
+        color: #006400;
+        font-size: 45px;
+      }
+      .toggle-menu {
+        color: #ffff;
+        display: none;
+      }
+      .tour-title {
+        text-align: center;
+        background: url(samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 250px;
+      }
+      .tour-title p {
+        font-size: 11px;
+        color: white;
+      }
+      .tour-title h1 {
+        font-size: 70px;
+        color: rgb(11, 70, 48);
+        border-bottom: 2px solid white;
+        border-radius: 25px;
+      }
+      .pic2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        background: none;
+      }
+      .pictures img {
+        height: 300px;
+        width: 500px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+      .pictures {
+        content: "";
+        transition: 0.5s;
+        border: 3px solid rgb(221, 219, 219);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+      }
+      .pictures:hover {
+        transform: translateY(-2%);
+        background: rgb(190, 193, 190);
+      }
+      .pictures h3 {
+        font-size: 20px;
+        text-align: center;
+
+        padding: 3px;
+        margin: 5px;
+      }
+
+      @media (max-width: 770px) {
+        .tour-title {
+          background: url(samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+          background-position: bottom;
+          background-size: cover;
+          padding: 90px;
+        }
+        .tour-title p {
+          font-size: 19px;
+          color: green;
+        }
+        .tour-title h1 {
+          font-size: 75px;
+          color: rgb(11, 70, 48);
+          border-bottom: 2px solid white;
+          border-radius: 25px;
+        }
+        .footer hr {
+          border: none;
+          background: #b5b5b5;
+          height: 0.5px;
+        }
+        .copy {
+          text-align: center;
+        }
+        .lolo img {
+          height: 90px;
+          width: 120px;
+        }
+
+        .lolo {
+          margin-left: -90px;
+        }
+        .lolo p {
+          padding-left: -20px;
+          margin-bottom: 10px;
+        }
+
+        .container2 {
+          display: flex;
+          justify-content: space-between;
+        }
+        .lolo2 img {
+          border-radius: 30px;
+          height: 35px;
+          justify-content: center;
+          width: 35px;
+          padding-top: 2px;
+
+          padding-right: 5px;
+        }
+        .lolo2 {
+          padding-top: 33px;
+          padding-left: 50px;
+        }
+        .lolo2 p {
+          padding-top: 20px;
+        }
+        h7 {
+          color: white;
+        }
+        .lolo1 {
+          padding-top: 35px;
+          padding-left: 30px;
+        }
+        .lolo1 p {
+          padding-top: 15px;
+          padding-left: 30px;
+        }
+        .footer {
+          background: black;
+          color: #8a8a8a;
+          font-size: 14px;
+          margin-top: 100px;
+          height: 250px;
+          margin-top: 100px;
+          padding: 100px;
+        }
+        .pictures h3 {
+          font-size: 15px;
+          text-align: center;
+
+          padding: 3px;
+          margin: 5px;
+        }
+        .pic2 {
+          display: flex;
+          justify-content: center;
+          padding-top: 30px;
+          background: none;
+        }
+        .pictures img {
+          height: 140px;
+          width: 170px;
+
+          margin: 10px;
+          border-radius: 10px;
+        }
+        .pictures {
+          content: "";
+          transition: 0.5s;
+          border: 3px solid rgb(221, 219, 219);
+          border-top: none;
+          border-right: none;
+          border-left: none;
+        }
+        .pictures:hover {
+          transform: translateY(-2%);
+          background: rgb(190, 193, 190);
+        }
+        .toggle-menu {
+          color: #fff;
+          display: flex;
+          overflow: hidden;
+          margin-right: 10px;
+        }
+
+        .navbar ul {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          display: flex;
+          gap: 20px;
+          padding-top: 5px;
+          background: rgb(11, 70, 48);
+
+          overflow: hidden;
+          bottom: 0;
+        }
+        .navbar ul a {
+          padding-top: 20px;
+        }
+        #menuList {
+          transition: all 0.5s;
+        }
+
+        .navbar ul li::after {
+          content: "";
+          height: 2px;
+          width: 0%;
+          background: rgb(142, 205, 182);
+          position: absolute;
+          transition: width 0.5s;
+          left: 0;
+          bottom: 0;
+          justify-content: center;
+          text-align: center;
+          display: flex;
+        }
+      }
+      .navbar {
+        background: rgb(11, 70, 48);
+        background-position: bottom;
+        background-size: cover;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px, 0;
+        margin: auto;
+        width: 100%;
+        box-shadow: 3px 3px 5px black;
+      }
+      .tour {
+        margin-top: 55px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <section class="big-kun">
+      <section class="pic2">
+        <div class="pictures">
+          <a href="tourimgonly.html"
+            ><img src="lotus-design-n-print-iu4K1XPnNAY-unsplash.jpg" alt=""
+          /></a>
+          <h3>Living Spaces</h3>
+        </div>
+        <div class="pictures">
+          <img src="olga-simonova-zVbIahejyi4-unsplash.jpg" alt="" />
+          <h3>Kitchens</h3>
+        </div>
+      </section>
+      <section class="pic2">
+        <div class="pictures">
+          <img src="438b2205c5670f5acf478f5489a89076.jpg" alt="" />
+          <h3>Bedrooms</h3>
+        </div>
+        <div class="pictures">
+          <img src="0d8d451ef2f2eecf040b38049febdf27.jpg" alt="" />
+          <h3>Bathrooms</h3>
+        </div>
+      </section>
+    </section>
+    <section class="pic2">
+      <div class="pictures">
+        <img src="02dd43d7-0395-49f8-8c02-924e412391fc.jpeg" alt="" />
+        <h3>Outdoor Spaces</h3>
+      </div>
+      <div class="pictures">
+        <img src="steven-ungermann-CVTmLMv5oG4-unsplash.jpg" alt="" />
+        <h3>Floor designs</h3>
+      </div>
+    </section>
+    <section class="pic2">
+      <div class="pictures">
+        <img src="layton-diament-EAwV4grbzSc-unsplash.jpg" alt="" />
+        <h3>Interior Roof</h3>
+      </div>
+      <div class="pictures">
+        <img src="5d1f729d7060a35a77d439eb79c80bb8(0).jpg" alt="" />
+        <h3>Interior Architecture <br />Layouts</h3>
+      </div>
+    </section>
+  </body>
+</html>

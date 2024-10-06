@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Service</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 1000px;
+      margin: 40px auto;
+
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #0cb00c;
+      border-radius: 25px;
+    }
+
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2fea35;
+    }
+
+    #select-from-gallery {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .small-img-col-2 img {
+      width: 300px;
+      height: 200px;
+    }
+    .kin {
+      display: block;
+    }
+  </style>
+  <body>
+   
+    <div class="container">
+      <h1>Request Service</h1>
+      <form action="submit.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label>Name:</label>
+          <input type="text" name="name" required />
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label>Phone Number:</label>
+          <input type="tel" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label>Design Selection:</label>
+          <select name="design" required>
+            <option value="">Select Design</option>
+            <option value="upload">Upload Your Own Design</option>
+            <option value="select_from_gallery">Select from Our Gallery</option>
+          </select>
+        </div>
+        <div class="form-group" id="upload-design">
+          <label>Upload Design File:</label>
+          <input type="file" name="design_file" />
+        </div>
+        <div class="form-group" id="select-from-gallery" style="display: none">
+          <label>Select Design from Our Gallery:</label>
+          <iframe
+            src="tourimgonly2.html"
+            frameborder="0"
+            width="100%"
+            height="500"
+          ></iframe>
+          <input type="hidden" name="selected_design" id="selected_design" />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Request Service" />
+        </div>
+      </form>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const designSelection = document.querySelector(
+            "select[name='design']"
+          );
+
+          const uploadDesign = document.getElementById("upload-design");
+          const selectFromGallery = document.getElementById(
+            "select-from-gallery"
+          );
+
+          designSelection.addEventListener("change", function () {
+            if (this.value === "upload") {
+              uploadDesign.style.display = "block";
+              selectFromGallery.style.display = "none";
+            } else if (this.value === "select_from_gallery") {
+              uploadDesign.style.display = "none";
+              selectFromGallery.style.display = "block";
+            }
+          });
+        });
+
+        const galleryIframe = document.getElementById("select-from-gallery");
+        const selectedDesignInput = document.getElementById(
+          "select-from-gallery"
+        );
+
+        galleryIframe.addEventListener("load", () => {
+          const iframeDoc =
+            galleryIframe.contentDocument ||
+            galleryIframe.contentWindow.document;
+          const images = iframeDoc.querySelectorAll(".small-img-col-2");
+
+          images.forEach((image) => {
+            image.addEventListener("click", (event) => {
+              event.preventDefault();
+              selectedDesignInput.value = image.src;
+              // Add inline style to selected image
+              image.style.border = "2px solid #007bff";
+              image.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.2)";
+
+              console.log(`Selected design: ${image.src}`);
+            });
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

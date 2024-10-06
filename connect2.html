@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About page</title>
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+.footer p {
+  color: #8a8a8a;
+  font-size: 10px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer {
+  background: black;
+  color: #8a8a8a;
+  font-size: 14px;
+  margin-top: 100px;
+  height: 250px;
+}
+
+
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 0.5px;
+  margin-top: 50px;
+  
+}
+.copy{
+  text-align: center;
+   
+  
+}
+.lolo img{
+height: 90px;
+width: 120px;
+}
+
+.lolo{
+  margin-left: 90px;
+}
+.lolo p{
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.container2{
+  display: flex;
+  justify-content: space-between;
+}
+.lolo2 img{
+  
+  border-radius: 30px;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+.lolo2{
+  padding-top: 30px;
+  padding-right: 40px;
+}
+.lolo2 p{
+  padding-top: 10px;
+}
+h7{
+  color: white;
+}
+.lolo1{
+  padding-top: 35px;
+}
+.lolo1 p {
+  padding-top: 15px;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+img {
+  mix-blend-mode: screen;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px, 0;
+  margin: auto;
+  width: 100%;
+  box-shadow: 3px 3px 5px black;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fcf9f9;
+  
+}
+.navbar ul li::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: rgb(142, 205, 182);
+  position: absolute;
+  transition: width 0.5s;
+  left: 0;
+  bottom: 0;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+
+.connect1 {
+  background: url(toa-heftiba-FV3GConVSss-unsplash.jpg);
+  
+  padding: 150px;
+  
+  margin-top: 5px;
+  background-position: center;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+.not h1 {
+  color:rgb(2, 33, 18);
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  
+  display: flex;
+}
+.not p {
+  color: rgb(1, 52, 33);
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+.write h1 {
+  color: #000;
+  font-size: 16px;
+}
+.write p {
+  color: rgb(49, 52, 52);
+  font-size: 11px;
+}
+.detail {
+  display: flex;
+  padding: 10px;
+}
+.cog img {
+  width: 30px;
+  height: auto;
+}
+.cog {
+  background: rgb(1, 52, 33);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+}
+.write {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.work p {
+  color: rgb(49, 52, 52);
+  font-size: 11px;
+}
+.work {
+  padding: 10px;
+}
+.work h1 {
+  padding-bottom: 5px;
+  font-size: 22px;
+  color: black;
+}
+.net hr {
+  width: 250px;
+  color: rgb(1, 52, 33);
+  justify-content: center;
+}
+.net{
+  margin-left: 250px;
+  margin-top: 50px;
+}
+.network {
+  display: flex;
+  background: whitesmoke;
+  justify-content: center;
+  align-content: center;
+ 
+  justify-content: space-between;
+  margin-top: -100px;
+}
+.blok {
+  background: white;
+  justify-content: center;
+  width: 500px;
+  height: 380px;
+  padding-bottom: 200px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px #66666655;
+  overflow: hidden;
+  border: none;
+  background: white;
+  box-sizing: border-box;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 90px;
+  padding-top: 40px;
+}
+.unknow {
+  color: #0b0b0b;
+  white-space: nowrap;
+  display: flex;
+}
+label {
+  font-size: 10px;
+  letter-spacing: 0px;
+  
+  color: rgb(100, 100, 100);
+  display: flex;
+  align-items: center;
+}
+.ry{
+  font-size: 14px;
+  
+}
+.okay {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  padding: 10px 0;
+  outline: none;
+  border-radius: 0;
+}
+.jy {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  padding: 10px 0;
+  outline: none;
+  
+}
+.okay:focus {
+  border-bottom: 2px solid ;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  background:rgb(1, 52, 33) ;
+  border: 2px solid rgb(9, 130, 86);
+  color: rgb(228, 222, 222);
+  font-weight: bold;
+  border-radius: 25px;
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.navbar{
+  background: rgb(11, 70, 48);
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  box-shadow: 3px 3px 5px black;
+}
+
+button:hover {
+  background: rgb(234, 229, 229);
+  color: rgb(1, 52, 33);
+}
+.ic8 {
+  display: flex;
+}
+.ic8 img {
+  height: 50px;
+  width: 50px;
+}
+.ont img {
+  height: 37px;
+  width: 37px;
+  padding-top: 8px;
+}
+.ont2 img {
+  width: 40px;
+  height: 40px;
+  padding-top: 7px;
+  padding-left: 2px;
+}
+.ont3 img {
+  width: 44px;
+  height: 46px;
+  padding-top: 4px;
+  padding-left: 2px;
+}
+.ugo {
+  font-size: 12px;
+}
+.oppo {
+  font-size: 13px;
+  color: #555;
+  
+}
+.block {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid rgb(11, 58, 11);
+  margin-top: 40px;
+  margin-left: 60px;
+}
+.block h1 {
+  color:  rgb(11, 70, 48);
+  font-size: 100px;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+iframe {
+  width: 80%;
+  height: 400px;
+  filter: contrast(100%);
+ 
+}
+.clg {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+svg {
+  width: 300px;
+  height: 300px;
+}
+
+.back{
+
+  border-radius: 25px;
+
+ 
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  justify-content: center;
+  border-bottom: rgb(250, 252, 251) 5px solid;
+ 
+}
+.nav ul li a {
+  text-decoration: none;
+  color: gray;
+  
+}
+.nav ul li {
+  list-style: none;
+  display: block;
+  position: relative;
+}
+.ugochi{
+    padding-bottom: 70px;
+
+}
+.jy::placeholder{
+  padding-top: 20px;
+}
+.lolo1 {
+        padding-top: 35px;
+      }
+      .lolo1 p :hover {
+        color: green;
+      }
+      .lolo1 p {
+        padding-top: 15px;
+        transition: 0.5s;
+        color: #fff;
+      }
+      .lolo1 ul li a {
+        color: gray;
+        transition: 0.5s;
+      }
+      .lolo1 ul li a:hover {
+        color: #006400;
+      }
+      .lolo2 img:hover {
+        background: #006400;
+        border-radius: 25px;
+      }
+      .lolo2 img {
+        border-radius: 30px;
+        height: 35px;
+        justify-content: center;
+        width: 35px;
+        padding-top: 10px;
+        transition: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+        <div class="navbar">
+          <img src="logo80.png" class="logo" />
+          <ul>
+            <li><a href="doc.html">Home</a></li>
+            <li><a href="docaboutus.html">About us</a></li>
+            <li><a href="tour.html">Property Tour</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="docaccount.html">Account</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    <div class="connect1">
+      <div class="not">
+        <div class="back">
+        <h1>Contact Us</h1>
+   
+        </div>
+      </div>
+    </div>
+    <div class="clg">
+     <div class="ugochi">
+     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="825.85001" height="506.44001" viewBox="0 0 825.85001 506.44001"><path d="m438.22,378.66001c-1.76999,10.70999-11.09,18.91-22.29001,18.91s-20.53-8.20001-22.29001-18.91h-57.04001v123.61002h158.66v-123.60999h-57.04001l.00003-.00003Z" fill="#d9d9d9" stroke-width="0"/><rect x="339.36" y="501.81" width="15.68001" height="2.76999" fill="#b6b3c5" stroke-width="0"/><rect x="478.19" y="502.26999" width="15.67999" height="2.76999" fill="#b6b3c5" stroke-width="0"/><path d="m735.01001,381.89002H96.85c-4.88,0-8.85-3.97-8.85-8.85001V8.85c0-4.88,3.97-8.85,8.85-8.85h638.15995c4.88,0,8.84998,3.97,8.84998,8.85v364.20002c0,4.88-3.96997,8.85001-8.84998,8.85001h0l.00006-.01001Z" fill="#2f2e41" stroke-width="0"/><rect x="104.14" y="15.68" width="624.49001" height="352.36999" fill="#fff" stroke-width="0"/><path d="m0,505.53c0,.5.39999.91.91.91h824.03c.5,0,.91-.39999.91-.91s-.39999-.91-.91-.91H.91c-.5,0-.91.39999-.91.91Z" fill="#2f2e43" stroke-width="0"/><rect x="452.85547" y="162.80304" width="171" height="15.50007" rx="7.75002" ry="7.75002" fill="#6c63ff" stroke-width="0"/><rect x="486.35547" y="225.80304" width="137.5" height="15.50007" rx="7.75002" ry="7.75002" fill="#6c63ff" stroke-width="0"/><rect x="585.35547" y="266.80303" width="38.5" height="15.50007" rx="7.75002" ry="7.75002" fill="#6c63ff" stroke-width="0"/><rect x="252.85547" y="205.80299" width="131.5" height="15.50007" rx="7.75002" ry="7.75002" fill="#cacacb" stroke-width="0"/><rect x="252.85547" y="245.80298" width="49.5" height="15.50007" rx="7.75003" ry="7.75003" fill="#cacacb" stroke-width="0"/><rect x="497.35547" y="184.80299" width="126.5" height="15.50007" rx="7.75002" ry="7.75002" fill="#6c63ff" stroke-width="0"/><line x1="243.85547" y1="110.80311" x2="632.85547" y2="110.80311" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><line x1="256.35547" y1="97.30311" x2="341.62376" y2="97.30311" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><polygon points="133.90734 266.95399 127.08699 293.90612 174.18238 293.32469 168.79281 268.69826 133.90734 266.95399" fill="#ec9c9f" stroke-width="0"/><polygon points="125.19564 359.03605 114.9706 403.77063 96.15131 493.33475 104.87267 495.07903 164.8177 361.59231 125.19564 359.03605" fill="#ec9c9f" stroke-width="0"/><polygon points="144.88194 369.22618 163.76862 411.04756 191.50494 495.07903 203.13343 492.17191 177.9956 347.31894 144.88194 369.22618" fill="#ec9c9f" stroke-width="0"/><path d="m129.73176,282.80932s-21.0265,37.02558-17.19211,77.92577c0,0,30.99861,23.4725,80.79675,1.74427l-20.49905-81.80038-43.10559,2.13034Z" fill="#090814" stroke-width="0"/><path d="m94.6951,504.01361c-1.00113-.8206-1.54155-1.73691-1.60613-2.72359-.07391-1.12857.4838-2.33945,1.65737-3.59899.02817-.36244.39241-4.8529,1.20407-5.657-.06804-.24037-.48147-1.83392.19625-2.86866.31927-.48742.83388-.77152,1.52958-.84442l.03031-.00313.01502.02682c.01962.03507,1.99467,3.50875,4.96562,3.81373,1.7033.17484,3.40864-.71249,5.0687-2.63806.05967-.14226.52872-2.4876.83146-4.04004l.01211-.06207,16.18785,8.61544,9.46241,2.65115c1.18928.33323,2.01988,1.43857,2.01988,2.68802,0,1.06539-.61278,2.05207-1.56112,2.51364l-4.58661,2.2324c-1.9165.93281-4.05348,1.42585-6.17995,1.42585h-24.87937c-1.61191,0-3.16297-.54373-4.36745-1.53106Z" fill="#090814" stroke-width="0"/><path d="m187.14161,504.01361c-1.00113-.8206-1.54155-1.73691-1.60613-2.72359-.07391-1.12857.4838-2.33945,1.65737-3.59899.02817-.36244.39241-4.8529,1.20407-5.657-.06804-.24037-.48147-1.83392.19625-2.86866.31927-.48742.83388-.77152,1.52958-.84442l.03031-.00313.01502.02682c.01962.03507,1.99467,3.50875,4.96562,3.81373,1.7033.17484,3.40864-.71249,5.0687-2.63806.05967-.14226.52872-2.4876.83146-4.04004l.01211-.06207,16.18785,8.61544,9.46241,2.65115c1.18928.33323,2.01988,1.43857,2.01988,2.68802,0,1.06539-.61278,2.05207-1.56112,2.51364l-4.58661,2.2324c-1.9165.93281-4.05348,1.42585-6.17995,1.42585h-24.87937c-1.61191,0-3.16297-.54373-4.36745-1.53106Z" fill="#090814" stroke-width="0"/><path d="m140.67445,183.31593c0-10.49112,8.50475-18.99588,18.99588-18.99588,10.49119,0,18.99595,8.50475,18.99595,18.99588,0,8.50837-5.59422,15.70925-13.30477,18.12757l-3.67223,24.26908-18.72057-15.60045s4.04421-5.15134,6.21305-10.95977c-5.12608-3.40182-8.50731-9.22316-8.50731-15.83644Z" fill="#ec9c9f" stroke-width="0"/><path d="m141.18623,202.06797l22.37376,14.30207,10.32709,18.23765c2.99019,5.28068,4.00009,11.45432,2.84839,17.41254l-4.74482,24.54687h-49.47121s7.81675-51.21249,7.81675-51.21249c.99768-6.53645,3.48735-12.75532,7.27598-18.17443l3.57406-5.11221Z" fill="#6c63ff" stroke-width="0"/><path d="m134.57531,208.27449s.88705,6.72999,9.10548,6.94977q16.67112.44582,16.67112.44582s-14.09285-34.29671-8.29807-30.43294c5.79478,3.86377,21.24752-12.33435,21.24752-12.33435l4.55958,8.55144s10.89316-3.94464-1.17929-13.60407c0,0-14.40418-11.13618-29.69595-4.44888s-12.41039,44.87321-12.41039,44.87321Z" fill="#090814" stroke-width="0"/><rect x="70.35547" y="343.30311" width="167" height="37" fill="#cacacb" stroke-width="0"/><circle cx="90.40085" cy="361.18262" r="11" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><line x1="105.40085" y1="352.18262" x2="170.67007" y2="352.18262" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><line x1="105.40085" y1="361.18262" x2="219.27449" y2="361.18262" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><line x1="105.40085" y1="368.49799" x2="228.99537" y2="368.49799" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><path d="m145.01414,330.14192l-.39938-18.40908,10.74845-.23318.39938,18.40908c2.00539,1.86164,3.32919,4.75425,3.40034,8.03381.12449,5.73837-3.62437,10.47369-8.37335,10.57671-4.74898.10303-8.69968-4.46525-8.82417-10.20362-.07115-3.27955,1.12605-6.22686,3.04873-8.17371Z" fill="#ec9c9f" stroke-width="0"/><polyline points="159.85302 238.00363 159.85302 327.23411 141.18623 327.23411 135.66941 238.75686" fill="#6c63ff" stroke-width="0"/></svg>
+     </div>
+    </div>
+    <section class="network">
+      <div class="net">
+        <div class="work">
+          <h1>Get In Touch</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur <br />adipisicing elit. Quia
+            nostrum at eveniet <br />quaerat beatae harum nam si
+          </p>
+        </div>
+        <div class="detail">
+          <div class="cog">
+            <img src="icons8-location-50.png" alt="" />
+          </div>
+          <div class="write">
+            <h1>Address</h1>
+            <p>123 Main streer,New York</p>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="cog">
+            <img src="icons8-phone-50.png" alt="" />
+          </div>
+          <div class="write">
+            <h1>Phone Number</h1>
+            <p>+123-456-7542</p>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="cog">
+            <img src="icons8-mail-50.png" alt="" />
+          </div>
+          <div class="write">
+            <h1>E-mail</h1>
+            <p>ajibadejerry67@gmail.com</p>
+          </div>
+        </div>
+        <hr />
+        
+        
+      </div>
+  
+      <div class="blok">
+        <div class="unknow"><h1>Send a Message</h1></div>
+        <div>
+         
+          <input class="okay" type="text" id="Name" placeholder="Name" required="required" />
+        </div>
+        <div>
+         
+          <input class="okay" type="text" id="Email" placeholder="Email address" required="required" />
+        </div>
+        <div >
+         <label class="ry">Message</label>
+          <textarea class="jy" name="message" row="5" cols="30"  id="message"   required="required"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        <p class="oppo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </form> 
+    </section>
+    <div class="block">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157293.85384257825!2d-74.18995697756151!3d40.6257716824959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sng!4v1726830048035!5m2!1sen!2sng" width="600"
+       height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer">
+        <div class="container2">
+          <div class="lolo">
+            <img src="logo80.png" alt="">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Alias, natus quia 
+            perferendis corporis <br> blanditiis cupiditate ipsam tempora sunt provident</p> 
+          </div>
+          <div class="lolo1">
+            <h7>USEFUI LINKS</h7>
+            <div class="nav">
+              <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="blog.html">Blog Post </a></li>
+                <li><a href="#">Return Policy </a></li>
+                <li><a href="#">Join Affiliate </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="lolo2">
+           <h7>FOLLOW US</h7>
+           <p>Yes, we are social</p>
+       
+           <img src="icons8-instagram-48.png" alt="">
+           <img src="icons8-pinterest-48.png" alt="">
+           <img src="icons8-facebook-48.png" alt="">
+     
+          </div>
+        </div>
+        <hr />
+        <br> 
+        <p class="copy">Copyright 2024 - Emmanuel Jerry <br> kunkun</p></div>
+</div>
+  </body>
+</html>

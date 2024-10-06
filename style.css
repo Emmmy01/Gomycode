@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+  font-family: sans-serif;
+}
+section.login {
+  background: url("nathan-dumlao-zUNs99PGDg0-unsplash.jpg") no-repeat;
+  width: 600px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px #66666655;
+  overflow: hidden;
+  border: none;
+}
+
+form {
+  background: white;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(100, 100, 100);
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #333;
+  padding: 10px 0px;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #e04545;
+}
+
+button {
+  margin-top: 20px;
+  width: 150px;
+  border: none;
+  background: #333;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+  box-shadow: 0px 0px 0px #e04545;
+}
+
+button:hover {
+  box-shadow: 3px 3px 0px #e04545;
+  /* background: #e0c445; */
+}
+p {
+  color: #100f0fc7;
+  margin-top: -20px;
+
