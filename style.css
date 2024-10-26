@@ -1,78 +1,158 @@
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 98vh;
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Grey+Qo&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EB Garamond", serif;
 }
-section.login {
-  background: url("nathan-dumlao-zUNs99PGDg0-unsplash.jpg") no-repeat;
-  width: 600px;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  border-radius: 1rem;
-  box-shadow: 0px 0px 15px #66666655;
-  overflow: hidden;
-  border: none;
+html , body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
 }
 
-form {
-  background: white;
-  box-sizing: border-box;
-  width: 50%;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+#main{
+    width: 100%;
+    height: 85vh;
 }
 
-h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 0vw 10vw;
+    z-index: 99;
 }
 
-label {
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: rgb(100, 100, 100);
+nav a, i{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #fff;
 }
 
-input {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #333;
-  padding: 10px 0px;
-  outline: none;
+.cntr-nav{
+    display: flex;
+    gap: 3vw;
 }
 
-input:focus {
-  border-bottom: 2px solid #e04545;
+nav i{
+    font-size: 1.5vw;
 }
 
-button {
-  margin-top: 20px;
-  width: 150px;
-  border: none;
-  background: #333;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  padding: 10px;
-  cursor: pointer;
-  transition: 0.1s ease;
-  box-shadow: 0px 0px 0px #e04545;
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/bg.png);
 }
 
-button:hover {
-  box-shadow: 3px 3px 0px #e04545;
-  /* background: #e0c445; */
+.header h1{
+    font-size: 18vw;
+    font-family: "EB Garamond", serif;
+    color: #fff;
 }
-p {
-  color: #100f0fc7;
-  margin-top: -20px;
+
+#can{
+    position: absolute;
+    width: 35%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#choclate{
+    position: absolute;
+    top: 8%;
+    left: 42%;
+    width: 25%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#choclate2{
+    position: absolute;
+    width: 15%;
+    z-index: 3;
+    top: 70%;
+    right: 35%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#almod{
+    top: 10%;
+    left: 5%;
+    transform: rotate(60deg);
+    position: absolute;
+    width: 7%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#almod2{
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 10%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+
+.about{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #a9774e, #864831, #402014);
+}
+
+.about-left, .about-right{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.about-left img{
+    margin-top: 45vh;
+    width: 90%;
+    transform: rotateX(50deg);
+}
+
+.about-right h1{
+    color: #fff;
+    font-size: 5vw;
+}
+
+.about-right p{
+    font-size: 1vw;
+    color: #fff;
+    width: 80%;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vhvh;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+}
+
 

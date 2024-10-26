@@ -1,234 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-      }
-      .logo {
-        width: 120px;
-        cursor: pointer;
-      }
-      img {
-        mix-blend-mode: screen;
-      }
+You want to display only one testimonial at a time, and when the user clicks the "Next" button, the next testimonial slides into view.
 
-      .footer p {
-        color: #8a8a8a;
-        font-size: 10px;
-      }
 
-      .footer {
-        background: black;
-        color: #8a8a8a;
-        font-size: 14px;
-        margin-top: 100px;
-        height: 250px;
-        margin-top: 100px;
-      }
+To achieve this, modify the HTML, CSS, and JavaScript code as follows:
 
-      .nav ul li a {
-        text-decoration: none;
-        color: gray;
-        margin-bottom: 10px;
-      }
-      .nav ul li {
-        list-style: none;
-        display: block;
-        position: relative;
-      }
 
-      .footer hr {
-        border: none;
-        background: #b5b5b5;
-        height: 0.5px;
-        margin-top: 50px;
-      }
-      .copy {
-        text-align: center;
-      }
-      .lolo img {
-        height: 90px;
-        width: 120px;
-      }
+HTML:
 
-      .lolo {
-        margin-left: 90px;
-      }
-      .lolo p {
-        padding-left: 20px;
-        margin-bottom: 10px;
-      }
 
-      .container2 {
-        display: flex;
-        justify-content: space-between;
-      }
-      .lolo2 img {
-        border-radius: 30px;
-        height: 35px;
-        justify-content: center;
-        width: 35px;
-        padding-top: 10px;
-        transition: 0.5s;
-      }
-      .lolo2 img:hover {
-        background: #006400;
-        border-radius: 25px;
-      }
-      .lolo2 {
-        padding-top: 30px;
-        padding-right: 40px;
-      }
 
-      h7 {
-        color: white;
-      }
-      .lolo1 {
-        padding-top: 35px;
-      }
-      .lolo1 p :hover {
-        color: green;
-      }
-      .lolo1 p {
-        padding-top: 15px;
-        transition: 0.5s;
-        color: #fff;
-      }
-      .lolo1 ul li a {
-        color: gray;
-        transition: 0.5s;
-      }
-      .lolo1 ul li a:hover {
-        color: #006400;
-      }
+<div class="testimonial-container">
+  <div class="testimonial-slider">
+    <div class="testimonial-box">Testimonial 1</div>
+    <div class="testimonial-box">Testimonial 2</div>
+    <div class="testimonial-box">Testimonial 3</div>
+    <!-- Add more testimonial boxes -->
+  </div>
+  <button class="scroll-left">&larr;</button>
+  <button class="scroll-right">&rarr;</button>
+</div>
 
-      @media (max-width: 770px) {
-     
-        .footer hr {
-          border: none;
-          background: #b5b5b5;
-          height: 0.5px;
-        }
-        .copy {
-          text-align: center;
-        }
-        .lolo img {
-          height: 90px;
-          width: 120px;
-        }
 
-        .lolo {
-          margin-left: -90px;
-        }
-        .lolo p {
-          padding-left: -20px;
-          margin-bottom: 10px;
-        }
 
-        .container2 {
-          display: flex;
-          justify-content: space-between;
-        }
-        .lolo2 img {
-          border-radius: 30px;
-          height: 35px;
-          justify-content: center;
-          width: 35px;
-          padding-top: 2px;
+CSS:
 
-          padding-right: 5px;
-        }
-        .lolo2 {
-          padding-top: 33px;
-          padding-left: 50px;
-        }
-        .lolo2 p {
-          padding-top: 20px;
-        }
-        h7 {
-          color: white;
-        }
-        .lolo1 {
-          padding-top: 35px;
-          padding-left: 30px;
-        }
-        .lolo1 p {
-          padding-top: 15px;
-          padding-left: 30px;
-        }
-        .footer {
-          background: black;
-          color: #8a8a8a;
-          font-size: 14px;
-          margin-top: 100px;
-          height: 250px;
-          margin-top: 100px;
-          padding: 100px;
-        }
-        }
-      
-    
-    </style>
-  </head>
-  <body>
-    <section>
-   
-    <div class="footer">
-      <div class="container2">
-        <div class="lolo">
-          <img src="logo80.png" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Alias, natus quia perferendis corporis <br />
-            blanditiis cupiditate ipsam tempora sunt provident
-          </p>
-        </div>
 
-        <div class="lolo1">
-          <h7>USEFUI LINKS</h7>
-          <div class="nav">
-            <ul>
-              <li><a href="#">Coupons</a></li>
-              <li><a href="#">Blog Post </a></li>
-              <li><a href="#">Tour </a></li>
-              <li><a href="#">About </a></li>
-              <li><a href="#">Service </a></li>
-              <li><a href="#">Request </a></li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="lolo2">
-          <h7>FOLLOW US</h7>
-          <p>Yes, we are social</p>
+.small-container{
+  overflow: hidden;
+  position: relative;
+}
 
-          <img src="icons8-instagram-48.png" alt="" />
-          <img src="icons8-pinterest-48.png" alt="" />
-          <img src="icons8-facebook-48.png" alt="" />
-        </div>
-      </div>
-      <hr />
-      <br />
-      <div class="copy">
-      <p>
-        Copyright 2024 - Emmanuel Jerry <br />
-        kunkun
-      </p>
-      </div>
-    </div>
-  </body>
-</html>
+.row3 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.col-4 {
+  width: 100%;
+  flex-shrink: 0;
+  margin: 20px;
+}
+
+.scroll-left, .scroll-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.scroll-left {
+  left: 0;
+}
+
+.scroll-right {
+  right: 0;
+}
+
+
+
+JavaScript:
+
+
+
+const testimonialContainer = document.querySelector('.testimonial-container');
+const testimonialSlider = document.querySelector('.testimonial-slider');
+const testimonialBoxes = document.querySelectorAll('.testimonial-box');
+const scrollLeftBtn = document.querySelector('.scroll-left');
+const scrollRightBtn = document.querySelector('.scroll-right');
+
+let currentTestimonial = 0;
+
+scrollLeftBtn.addEventListener('click', () => {
+  currentTestimonial--;
+  updateSlider();
+});
+
+scrollRightBtn.addEventListener('click', () => {
+  currentTestimonial++;
+  updateSlider();
+});
+
+function updateSlider() {
+  if (currentTestimonial < 0) {
+    currentTestimonial = testimonialBoxes.length - 1;
+  } else if (currentTestimonial >= testimonialBoxes.length) {
+    currentTestimonial = 0;
+  }
+  
+  testimonialSlider.style.transform = `translateX(${-currentTestimonial * 100}%)`;
+}
+
+
+
+This code creates a sliding testimonial effect, displaying one testimonial at a time.
+
+
+Adjust the styles and layout as needed.
+
+
+Do you need:
+
+
+1. Help with implementation?
+2. Modifications to the code?
+3. Additional features?

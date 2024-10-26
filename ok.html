@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .clg img {
+        width: 500px;
+        height: 400px;
+        border-radius: 50%;
+      }
+      .clg{
+        border-radius: 50%;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      nav li {
+        margin-right: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+      }
+
+      section {
+        background-color: #f7f7f7;
+        padding: 1em;
+        margin-bottom: 1em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .project-card {
+        background-color: #fff;
+        padding: 1em;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Home Section -->
+      <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+          I'm Emmanuel Jeremiah, a Web developer with a passion for building web
+          applications.
+        </p>
+        <div class="clg">
+          <img src="emmy.jpg" alt="Your Profile Image" />
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="project1.jpg" alt="Project 1 Image" />
+            <h3>Interior Home Design Website</h3>
+            <p>
+              This project is part of my portfolio, demonstrating my ability to
+              design both physical spaces and a functional, visually appealing
+              website. The website is user-friendly, showcasing various interior
+              design styles, project galleries, and detailed design services.
+              With a clean layout and intuitive navigation, the site reflects my
+              attention to detail and creativity. It also serves as a digital
+              showcase of my design process, from concept development to the
+              final execution, highlighting my versatility in meeting diverse
+              design needs.
+            </p>
+          </div>
+          <div class="project-card">
+            <img src="Screenshot (10).png" alt="Project 2 Image" />
+            <h3>E-commerce Website</h3>
+            <p>
+              This portfolio project highlights my skills in developing a sleek,
+              user-centric e-commerce website for clothing. The website is
+              designed to offer a seamless shopping experience, with easy
+              navigation, detailed product pages, and an efficient checkout
+              process. I focused on creating a visually appealing layout that
+              showcases clothing collections through high-quality imagery and
+              clear categorization. The design emphasizes both functionality and
+              aesthetics, ensuring users can quickly find what they need while
+              enjoying an immersive shopping experience. This project
+              demonstrates my ability to blend fashion with technology for a
+              modern retail solution.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>My Tools</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>PHP</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Contact me at ajibadejerry67@gmai.com or 07065849749</p>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <button>Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+      <ul>
+        <li><a href="#" target="_blank">LinkedIn</a></li>
+        <li><a href="#" target="_blank">GitHub</a></li>
+        <li><a href="#" target="_blank">Twitter</a></li>
+      </ul>
+    </footer>
+
+    <script>
+      // Smooth scrolling to sections
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Toggle navigation menu on smaller screens
+      const navToggle = document.querySelector("nav ul");
+      const navBtn = document.querySelector("header nav button");
+
+      navBtn.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
+      });
+
+      // Form submission handling
+      const form = document.querySelector("form");
+      const formData = {};
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const message = document.querySelector("textarea").value;
+
+        // Send data to server or email service
+        console.log({ name, email, message });
+      });
+    </script>
+  </body>
+</html>

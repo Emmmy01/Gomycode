@@ -1,7 +1,7 @@
 <?php
-// Check if form is submitted
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
+
     $name = $_POST["name"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
@@ -9,11 +9,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $design_file = $_FILES["design_file"];
     $selected_design = $_POST["selected_design"];
 
-    // Handle form data
-    if ($design === "upload") {
-        // Handle uploaded design file
+ 
+    if ($design === "upload") { {
+        \get_cfg_var:catch
+    }
+ 
     } elseif ($design === "select_from_gallery") {
-        // Handle selected design from gallery
+    
     }
 }
 

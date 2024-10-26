@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
     <title>About Us</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -239,6 +239,221 @@ h7{
   margin-top: 70px;
   
 }
+@media (max-width: 770px) {
+    
+    .logo {
+      width: 400px;
+      
+    }
+    .small-img-row6 {
+  
+ 
+  padding-top: 15px;
+  flex-direction: column;
+
+  
+  
+}
+.small-img-col-2 {
+ flex-basis: 50%;
+  cursor: pointer;
+  display: flex;
+  margin-left: 50px;
+  
+  flex-direction: column;
+  
+}
+.small-img-col-2 img{ 
+    width: 1250px;
+    height:810px ;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    
+    flex-direction: column;
+}
+
+
+.sml {
+  justify-content: center;
+
+  flex-direction: column;
+  display: flex;
+  margin-top: 70px;
+  
+}
+
+
+
+    .footer hr {
+      border: none;
+      background: #05961f;
+      height: 2px;
+      width: 1054px;
+    }
+    .copy {
+      text-align: center;
+      margin-left: 500px;
+      font-size: 20px;
+      padding-top: 80px;
+    }
+    .footer p {
+      font-size: 30px;
+    }
+    .lolo img {
+      height: 290px;
+      width: 400px;
+    }
+    hr {
+      padding-left: 430px;
+    }
+    .lolo {
+      margin-left: 110px;
+      margin-top: -300px;
+    }
+    .lolo p {
+      padding-left: -20px;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    .container2 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .lolo2 img {
+      border-radius: 30px;
+      height: 85px;
+      justify-content: center;
+      width: 85px;
+      padding-top: 2px;
+    }
+    .lolo2 {
+      padding-top: 33px;
+      margin-top: -220px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 300px;
+    }
+    .lolo2 p {
+      padding-top: 20px;
+      font-size: 30px;
+    }
+    h7 {
+      color: white;
+      font-size: 40px;
+    }
+    .lolo1 {
+      padding-top: 35px;
+      margin-top: -219px;
+      padding-left: 260px;
+    }
+    .lolo1 p {
+      padding-top: 15px;
+    }
+    .footer {
+      background: black;
+      color: #8a8a8a;
+      font-size: 14px;
+      height: 250px;
+      padding: 300px;
+      width: 1189px;
+      margin-top: 1000px;
+      margin-left: -400px;
+
+    }
+    .nav ul li a {
+      text-decoration: none;
+      color: gray;
+      margin-bottom: 10px;
+      font-size: 35px;
+    }
+    .nav ul li {
+      list-style: none;
+      display: block;
+      position: relative;
+    }
+      .toggle-menu {
+      color: #fff;
+      display: flex;
+      overflow: hidden;
+      margin-right: 40px;
+      font-size: 65px;
+    }
+
+    .navbar ul {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      display: flex;
+      gap: 80px;
+      padding-top: 10px;
+      padding-left: 20px;
+      background: rgb(11, 70, 48);
+
+      overflow: hidden;
+      bottom: 0;
+      top: 90px;
+    }
+    .navbar ul a {
+      padding-top: 20px;
+      font-size: 50px;
+      width: 3000px;
+      height: 400px;
+      padding: 20px;
+    }
+    #menuList {
+      transition: all 0.5s;
+      margin-top: 209px;
+      width: 1371px;
+      z-index: 1;
+      height: 1000px;
+    }
+
+    .navbar ul li::after {
+      content: "";
+      height: 2px;
+      width: 0%;
+      background: rgb(142, 205, 182);
+      position: absolute;
+      transition: width 0.5s;
+      left: 0;
+      bottom: 0;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+    }
+    .navbar {
+      background: rgb(11, 70, 48);
+      background-position: bottom;
+      background-size: cover;
+      width: 386%;
+      
+    }
+    .livh1 h1{
+      font-size: 100px;
+      white-space: nowrap;
+      text-transform: uppercase;
+   margin-left: 350px;
+   color: #05961f;
+    }
+    .wow{
+      color: #8a8a8a;
+      font-size: 29px;
+      white-space: nowrap;
+    }
+    h3{
+      font-size: 35px;
+      white-space: nowrap;
+    }
+  .title{
+    margin-left: 20px;
+  }
+}
+    
+    
 
     </style>
   
@@ -248,8 +463,8 @@ h7{
     <section>
         <div class="background">
           <div class="navbar">
-            <img src="logo80.png" class="logo" />
-            <ul>
+           <a href="doc.html"> <img src="logo80.png" class="logo" /> </a>
+            <ul id="menuList">
               <li><a href="doc.html">Home</a></li>
               <li><a href="docaboutus.html">About us</a></li>
               <li><a href="tour.html">Property Tour</a></li>
@@ -257,69 +472,193 @@ h7{
               <li><a href="connect2.html">Contact us</a></li>
               <li><a href="docaccount.html">Account</a></li>
             </ul>
+            <i class="fa fa-bars toggle-menu" onclick="toggleMenu()"></i>
           </div>
         </div>
-        <div class="sml">
-   
+</section>
+<script>
+  const menuList = document.getElementById("menuList");
+  menuList.style.maxHeight = "0px";
 
-            
+  function toggleMenu() {
+    if (menuList.style.maxHeight == "0px") {
+      menuList.style.maxHeight = "1200px";
+    } else {
+      menuList.style.maxHeight = "0px";
+    }
+  }
+</script>
+        <div class="sml">    
+          <div class="livh1">
+         <h1>Living Rooms</h1>
+          </div>
             <div class="small-img-row6" >
             <div class="small-img-col-2">
-             <img src="lotus-design-n-print-iu4K1XPnNAY-unsplash.jpg"  class="smallimg">
+             <img src="lotus-design-n-print-iu4K1XPnNAY-unsplash.jpg"  >
+             <div class="title">
+            <p class="wow">Modern Sitting Room - 2024</p>
+             <h3>A bright and airy space filled with natural light,  
+              featuring a plush sectional <br> sofa, minimalist coffee table,
+               and floor-to-ceiling windows  overlooking the <br> city.</h3>
+              </div>
+            </div>
+            <div class="small-img-col-2">
+              <img src="kara-eads-L7EwHkq1B2s-unsplash.jpg"  >
+              <div class="title">
+              <p class="wow">Luxury Lounge - January 2022</p>
+              <h3>
+                Unwind in style in this opulent sitting room, boasting a velvet sofa, marble <br> fireplace, and crystal chandelier, perfect for relaxing and entertaining.</h3>
+              </div>
             </div>
             
-            <div class="small-img-col-2">
-              <img src="kara-eads-L7EwHkq1B2s-unsplash.jpg" class="smallimg" >
+            <div class="small-img-col-2">  
+              <img src="3bb6fb346fc10dda0dfe859f5aabcaa4(0).jpg" >
+              <div class="title">
+                <p class="wow">Cozy Reading Nook - March 2023 </p>
+                 <h3>A warm and inviting sitting room with rich wood paneling, comfortable  </br>armchairs, and floor lamps, perfect for curling up with a good book</h3>
+                  </div>
             </div>
             
-            <div class="small-img-col-2">
-                
-              <img src="3bb6fb346fc10dda0dfe859f5aabcaa4(0).jpg" class="smallimg" >
-            </div>
-            
-            <div class="small-img-col-2">
-              <img src="589dac5ee3b56a867c9b1aafc88049ee.jpg" class="smallimg" >
-            </div>
-            </div>
+          
             
             <div class="small-img-row6" >
                 <div class="small-img-col-2">
                  <img src="spacejoy-RqO6kwm4tZY-unsplash(0).jpg"  class="smallimg">
+                 <div class="title">
+                  <p class="wow">Luxury Lounge - January 2022</p>
+                  <h3>
+                    Unwind in style in this opulent sitting room, boasting a velvet sofa, marble <br> fireplace, and crystal chandelier, perfect for relaxing and entertaining.</h3>
+                  </div>
+                </div>
                 </div>
                 
                 <div class="small-img-col-2">
                   <img src="spacejoy-trG8989WjFA-unsplash[1].jpg" class="smallimg" >
+                  <div class="title">
+                    <p class="wow">Luxury Lounge - January 2022</p>
+                    <h3>
+                      Unwind in style in this opulent sitting room, boasting a velvet sofa, marble <br> fireplace, and crystal chandelier, perfect for relaxing and entertaining.</h3>
+                    </div>
+                  </div>
                 </div>
                 
+            
                 <div class="small-img-col-2">
-                    
-                  <img src="on.jpeg" class="smallimg" >
-                </div>
-                
-                <div class="small-img-col-2">
-                  <img src="clay-banks-nIz9t3s0IMg-unsplash.jpg" class="smallimg" >
+                  <img src="clay-banks-nIz9t3s0IMg-unsplash.jpg" >
+                  <div class="title">
+                    <p class="wow">Luxury Lounge - January 2022</p>
+                    <h3>
+                      Unwind in style in this opulent sitting room, boasting a velvet sofa, marble <br> fireplace, and crystal chandelier, perfect for relaxing and entertaining.</h3>
+                    </div>
+                  </div>
                 </div>
                 </div>
                 <div class="small-img-row6" >
                     <div class="small-img-col-2">
-                     <img src="clay-banks-xe8ok0nR65M-unsplash.jpg"  class="smallimg">
+                     <img src="clay-banks-xe8ok0nR65M-unsplash.jpg" >
+                     <div class="title">
+                      <p class="wow">Luxury Lounge - January 2022</p>
+                      <h3>
+                        Unwind in style in this opulent sitting room, boasting a velvet sofa, marble <br> fireplace, and crystal chandelier, perfect for relaxing and entertaining.</h3>
+                      </div>
+                    </div>
                     </div>
                     
-                    <div class="small-img-col-2">
-                      <img src="justin-schuler-dAAk8Aqd_-I-unsplash.jpg" class="smallimg" >
-                    </div>
+      
                     
                     <div class="small-img-col-2">
-                        
-                      <img src="rahul-chakraborty-dv9AoOYegRc-unsplash.jpg" class="smallimg" >
-                    </div>
-                    
-                    <div class="small-img-col-2">
-                      <img src="defa09c18432844d28c0608bea7acff9.jpg" class="smallimg" >
+                      <img src="defa09c18432844d28c0608bea7acff9.jpg" >
+                      <div class="title">
+                        <p class="wow">Luxury Lounge - January 2022</p>
+                        <h3>
+                          Unwind in style in this opulent sitting room, boasting a velvet sofa, marble <br> fireplace, and crystal chandelier, perfect for relaxing and entertaining.</h3>
+                        </div>
+                      </div>
                     </div>
                     </div>
   </div>
+  <div class="sml">    
+    <div class="livh1">
+   <h1>Dining Rooms</h1>
+    </div>
+      <div class="small-img-row6" >
+      <div class="small-img-col-2">
+       <img src="clay-banks-jcKzvS96oCk-unsplash.jpg"  >
+       <div class="title">
+      <p class="wow">Modern Sitting Room - 2024</p>
+       <h3>A bright and airy space filled with natural light,  
+        featuring a plush sectional <br> sofa, minimalist coffee table,
+         and floor-to-ceiling windows  overlooking the <br> city.</h3>
+        </div>
+      </div>
+      <div class="small-img-col-2">
+        <img src="clay-banks-KLPARZr59Vs-unsplash.jpg"  >
+        <div class="title">
+        <p class="wow">Luxury Lounge - January 2022</p>
+        <h3>
+          Unwind in style in this opulent sitting room, boasting a velvet sofa, marble <br> fireplace, and crystal chandelier, perfect for relaxing and entertaining.</h3>
+        </div>
+      </div>
+      
+      <div class="small-img-col-2">  
+        <img src="clay-banks-SJM99IAjWWE-unsplash.jpg" >
+        <div class="title">
+          <p class="wow">Cozy Reading Nook - March 2023 </p>
+           <h3>A warm and inviting sitting room with rich wood paneling, comfortable  </br>armchairs, and floor lamps, perfect for curling up with a good book</h3>
+            </div>
+      </div>
+      
+    
+      
+      <div class="small-img-row6" >
+          <div class="small-img-col-2">
+           <img src="mumu.jpeg"  class="smallimg">
+           <div class="title">
+            <p class="wow">Luxury Lounge - January 2022</p>
+            <h3>
+              Unwind in style in this opulent sitting room, boasting a velvet sofa, marble <br> fireplace, and crystal chandelier, perfect for relaxing and entertaining.</h3>
+            </div>
+          </div>
+              </div>
+              </div>
+</div>
+  <div class="footer">
+    <div class="container2">
+      <div class="lolo">
+        <img src="logo80.png" alt="">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Alias, natus quia 
+        perferendis corporis <br> blanditiis cupiditate ipsam tempora sunt provident</p> 
+      </div>
+      <div class="lolo1">
+        <h7>&#8584; USEFUI LINKS</h7>
+        <div class="nav">
+          <ul>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Blog Post </a></li>
+            <li><a href="#">Return Policy </a></li>
+            <li><a href="#">Join Affiliate </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="lolo2">
+       <h7>FOLLOW US</h7>
+       <p>Yes, we are social</p>
 
+       <img src="icons8-instagram-48.png" alt="">
+       <img src="icons8-pinterest-48.png" alt="">
+       <img src="icons8-facebook-48.png" alt="">
+
+      </div>
+    </div>
+    <hr />
+    <br> 
+    <p class="copy">Copyright 2024 - Emmanuel Jerry <br> kunkun</p></div>
+</div>
+
+
+
+
+</div>
 
 
 
@@ -353,37 +692,4 @@ h7{
   </body>
 </html>
 
-       <div class="footer">
-        <div class="container2">
-          <div class="lolo">
-            <img src="logo80.png" alt="">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Alias, natus quia 
-            perferendis corporis <br> blanditiis cupiditate ipsam tempora sunt provident</p> 
-          </div>
-          <div class="lolo1">
-            <h7>USEFUI LINKS</h7>
-            <div class="nav">
-              <ul>
-                <li><a href="#">Coupons</a></li>
-                <li><a href="#">Blog Post </a></li>
-                <li><a href="#">Return Policy </a></li>
-                <li><a href="#">Join Affiliate </a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="lolo2">
-           <h7>FOLLOW US</h7>
-           <p>Yes, we are social</p>
-         
-           <img src="icons8-instagram-48.png" alt="">
-           <img src="icons8-pinterest-48.png" alt="">
-           <img src="icons8-facebook-48.png" alt="">
-         
-          </div>
-        </div>
-        <hr />
-        <br> 
-        <p class="copy">Copyright 2024 - Emmanuel Jerry <br> kunkun</p></div>
-      </div>
-
-   
+     

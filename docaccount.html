@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
     <title>Login Screen</title>
     <link
       rel="stylesheet"
@@ -11,7 +11,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <style>
       body {
         display: flex;
@@ -22,7 +21,6 @@
         margin: 0;
       }
       section.login {
-        background: rgb(6, 62, 30);
         width: 600px;
         height: 400px;
         display: flex;
@@ -35,7 +33,6 @@
         justify-content: center;
         padding-right: 100px;
       }
-
       form {
         background: white;
         box-sizing: border-box;
@@ -46,12 +43,12 @@
         gap: 10px;
         justify-content: center;
       }
-
       h1 {
         font-size: 30px;
-
+        margin-left: 60px;
         text-transform: uppercase;
         color: rgb(6, 62, 30);
+        margin-bottom: 10px;
       }
 
       label {
@@ -62,7 +59,6 @@
         display: flex;
         align-items: center;
       }
-  
       input {
         width: 100%;
         border: none;
@@ -70,11 +66,9 @@
         padding: 10px 0;
         outline: none;
       }
-
       input:focus {
         border-bottom: 2px solid rgb(4, 129, 40);
       }
-
       button {
         display: flex;
         justify-content: center;
@@ -91,7 +85,6 @@
         font-size: 15px;
         cursor: pointer;
       }
-
       button:hover {
         background: rgb(9, 69, 9);
         color: white;
@@ -187,6 +180,8 @@
       .connect {
         justify-content: center;
         padding-left: 60px;
+        padding-bottom: 300%;
+        background: rgb(4, 49, 4);
       }
       .kunkun {
         color: white;
@@ -196,19 +191,285 @@
       .kun {
         padding-right: 60px;
       }
+      .fa-user {
+        margin-left: 85px;
+        border: 2px solid green;
+        padding: px;
+        color: green;
+        border-radius: 50%;
+        margin-right: 85px;
+        padding-left: 14px;
+        padding-bottom: -4px;
+        margin-top: -20px;
+        padding-top: 24px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        background: whitesmoke;
+      }
+      @media only screen and (max-width: 768px) {
+        .login {
+          height: 100px;
+          justify-content: center;
+          display: flex;
+          padding-left: 0px;
+
+          flex-direction: column;
+          overflow: hidden;
+        }
+        .fa-user {
+        margin-left: 145px;
+        border: 2px solid green;
+        padding: px;
+        color: green;
+        border-radius: 50%;
+        margin-right: 125px;
+        padding-left: 14px;
+        padding-bottom: -4px;
+        margin-top: 0px;
+        padding-top: 25px;
+        margin-bottom: -10px;
+        font-size: 20px;
+        background: whitesmoke;
+        border-color: rgb(3, 157, 39);
+        
+      }
+
+        section.login {
+          width: 100px;
+          display: block;
+          border-radius: 1rem;
+          box-shadow: 0px 0px 15px #66666655;
+          overflow: hidden;
+          margin-right: 0px;
+          border: none;
+        }
+        .login {
+          width: 0px;
+        }
+        .connect {
+          padding-left: 0px;
+          height: 100px;
+          margin-left: 0px;
+          display: flex;
+          flex-direction: column;
+          background: rgb(4, 49, 4);
+          width: 350px;
+        }
+        h2 {
+          display: block;
+          color: rgb(242, 237, 237);
+          font-size: 40px;
+          text-align: center;
+          justify-content: center;
+          padding-top: 0px;
+          margin-top: 140px;
+          margin-left: 55px;
+          white-space: nowrap;
+        }
+        .connect a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 170px;
+          height: 55px;
+          border: 2px solid rgb(6, 118, 35);
+          color: rgb(4, 81, 32);
+          color: white;
+          font-weight: bold;
+          border-radius: 25px;
+          transition: 0.5s;
+          text-decoration: none;
+          font-size: 17px;
+          margin-left: 80px;
+          margin-top: 30px;
+          padding: 10px;
+        }
+        .connect a:hover {
+          background: rgb(26, 201, 78);
+          color: rgba(9, 79, 30, 0.039);
+        }
+        .connect {
+          justify-content: center;
+          padding-left: 60px;
+          padding-bottom: 100%;
+          background: rgb(4, 49, 4);
+        }
+        .kunkun {
+          color: white;
+          text-align: center;
+          padding-bottom: 0px;
+          font-size: 12px;
+          margin-left: 59px;
+        }
+        .kun {
+          padding-right: 60px;
+        }
+        form {
+          background: white;
+          box-sizing: border-box;
+          width: 0px;
+          margin-left: -15px;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: right;
+          height: 400px;
+          margin-top: 0px;
+        }
+        h1 {
+          font-size: 39px;
+          text-transform: uppercase;
+          color: rgb(6, 62, 30);
+          margin-left: 110px;
+          white-space: nowrap;
+        }
+
+        label {
+          font-size: 13px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: rgb(100, 100, 100);
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          gap: 50px;
+          margin-left: 10px;
+        }
+        input {
+          width: 104%;
+          margin-left: 10px;
+          border: none;
+          border-bottom: 2px solid #333;
+          padding: 8px 0;
+
+          outline: none;
+        }
+        input:focus {
+          border-bottom: 2px solid rgb(4, 129, 40);
+        }
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 220px;
+          height: 40px;
+          background: transparent;
+          border: 2px solid rgb(6, 118, 35);
+          color: rgb(4, 81, 32);
+          font-weight: bold;
+          z-index: 1;
+          border-radius: 25px;
+          transition: 0.5s;
+          text-decoration: none;
+          font-size: 20px;
+          cursor: pointer;
+          margin-left: 65px;
+          margin-top: 10px;
+          padding: 10px;
+        }
+        button:hover {
+          background: rgb(9, 69, 9);
+          color: white;
+        }
+
+        p {
+          color: #100f0fc7;
+          font-size: 10px;
+          margin: auto;
+          height: -30px;
+          float: 100px;
+        }
+
+        a {
+          color: gray;
+          text-decoration: none;
+
+          white-space: nowrap;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        .form-group {
+          display: flex;
+          align-items: center;
+          gap: 0px;
+          margin-top: -10px;
+          justify-content: flex-end;
+          width: 335px;
+        }
+        .form-group:hover {
+          text-decoration: underline;
+        }
+        .form-group span {
+          margin-left: 30px;
+          font-size: 15px;
+          text-align: center;
+          display: flex;
+          justify-content: right;
+        }
+
+        .link i {
+          font-size: 16px; /* Adjust the icon size as needed */
+          justify-content: right;
+          text-align: right;
+          padding-top: 0px;
+          padding-left: 0px;
+        }
+
+        .link a {
+          color: #9c0c0c;
+          text-decoration: underline;
+          font-size: 6px;
+        }
+
+        .link a:hover {
+          text-decoration: underline;
+        }
+      }
+
+      /* Mobile landscape */
+      @media only screen and (max-width: 480px) {
+        section.login {
+          width: 100%;
+          height: 100vh;
+        }
+        form {
+          width: 100%;
+        }
+        .connect {
+          padding-left: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 320px) {
+        section.login {
+          width: 95%;
+          height: 80vh;
+        }
+        form {
+          width: 90%;
+        }
+        .connect {
+          padding-left: 5px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div id="log in">
+    <div class="log" id="login">
       <section class="login">
-        <form>
+        <form class="ondot">
           <h1>Log In</h1>
+          <i class="fa fa-user"></i>
           <div>
-            <label for="username">Username</label>
+            <label for="username"> Username</label>
             <input type="text" id="username" placeholder="Enter username" />
           </div>
           <div>
-            <label for="password">Password</label>
+            <label for="password">Password </label>
             <input type="password" id="password" placeholder="Enter password" />
           </div>
           <div class="form-group">
@@ -216,7 +477,6 @@
           </div>
           <button type="submit">Log In</button>
         </form>
-
         <div class="connect">
           <div class="kun">
             <h2>Hello, Friend!</h2>

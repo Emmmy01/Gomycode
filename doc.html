@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=-2.0" />
     <title>HOME</title>
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -13,6 +13,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
+
+   
 <style>
 
 * {
@@ -29,6 +31,7 @@
   height: 100vh;
   box-shadow: 0px 1px 1px black;
   filter: black;
+  
 }
 
 .logo {
@@ -77,12 +80,13 @@ img {
         display: block;
         position: relative;
       }
-
       .footer hr {
         border: none;
         background: #01b42a;
         height: 0.5px;
         margin-top: 50px;
+        width: 100%;
+        margin-left: 0;
       }
       .copy {
         text-align: center;
@@ -91,7 +95,6 @@ img {
         height: 90px;
         width: 120px;
       }
-
       .lolo {
         margin-left: 90px;
       }
@@ -177,6 +180,7 @@ a {
   width: 80%;
   margin: auto;
   text-align: center;
+  
  
 }
 h1 {
@@ -190,10 +194,23 @@ h1 {
   line-height: 22px;
   padding: 10px;
 }
+hr{
+  background:  #0a4f0a;
+  width: 140px;
+  margin-left: 430px;
+  height: 5px;
+  border-radius: 25px;
+}
 .row {
  
   display: flex;
   justify-content: space-between;
+}
+.poloo{
+  background-color: #777;
+  width: 1255px;
+  margin: 0px;
+  margin-top: 50px;
 }
 .services-col {
   flex-basis: 31%;
@@ -202,11 +219,13 @@ h1 {
   margin-bottom: 5%;
   padding: 13px 0px;
   transition: 0.5s;
+  margin-top: 40px;
 }
 h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
+  font-size: 36px;
 }
 .services-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
@@ -220,16 +239,19 @@ h3 {
   align-items: center;
   gap: 1.5rem;
   background: transparent;
+  
 }
 h3 {
   color: rgb(9, 10, 10);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  
+  font-size: 36px;
   line-height: 1;
 }
 .nomal {
   
   gap: 1rem;
+  margin-bottom: 50px;
 }
 .nomal a {
   display: flex;
@@ -244,6 +266,7 @@ h3 {
   border-radius: 10px;
   transition: 0.5s;
   text-decoration: none;
+  
 }
 .nomal a:hover {
   background: rgb(225, 229, 227);
@@ -382,17 +405,18 @@ h4 {
   transform: translateY(-10px);
 }
 .photo {
-  background: rgba(0, 0, 0, 0.3);
+
   display: block;
   justify-content: center;
   height: 600px;
   align-items: center;
   color: black;
+  z-index: -1;
 }
 .photo .box {
   text-align: center;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
-  color: rgb(13, 62, 45);
+  box-shadow:  6px 6px 20px rgb(112, 108, 108);
+  color: rgb(6, 6, 6);
   margin-bottom: 50px;
   padding: 50px;
   transition: 0.5s;
@@ -407,11 +431,13 @@ h4 {
   width: 80px;
   margin-top: 10px;
   border-radius: 10px;
-  color: white;
+  color: rgb(6, 6, 6);
+  
 }
 .photo .box:hover {
   transform: translateY(-10px);
-  color: white;
+  color: rgb(14, 14, 14);
+  box-shadow: 5px 5px 5px #01b42a ;
 }
 .photo2 .Message:hover {
   transform: translateY(-10px);
@@ -426,6 +452,8 @@ h4 {
 .icon {
   display: flex;
   align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .oo {
   display: block;
@@ -435,12 +463,13 @@ h4 {
   display: flex;
 }
 .omg img {
-  height: 600px;
+  height: 450px;
   width: 600px;
   justify-content: center;
   align-items: center;
-
+  background: none;
   overflow: hidden;
+  margin-bottom: 46px;
 }
 .general {
   display: block;
@@ -453,7 +482,7 @@ h4 {
   display: flex;
 }
 .blog {
-  margin-top: 10%;
+  
   text-align: center;
 }
 .blog .box2 {
@@ -465,13 +494,19 @@ h4 {
   font-weight: 300;
   line-height: 22px;
   padding: 0px; 
-  color: rgb(42, 214, 42);
+  color: gray;
   display: block;
   text-align: center;
 }
 .blog .img {
   overflow: hidden;
   position: relative;
+}
+.pop{
+  font-size: 60px;
+  white-space: nowrap;
+  font-size: 36px;
+  color: black;
 }
 .blog img {
   width: 200px;
@@ -500,6 +535,7 @@ h4 {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .blog a {
   background: rgb(11, 70, 48);
@@ -518,6 +554,14 @@ h4 {
   border: 2px solid rgb(28, 145, 102);
   color: black;
 }
+.social2{
+  background:  #0a4f0a;
+  width: 140px;
+  margin-left: 550px;
+  height: 5px;
+  border-radius: 25px;
+}
+
 .head {
   padding-top: 50px;
 }
@@ -550,7 +594,7 @@ h4 {
 }
 .col-4 {
   padding: 60px 20px;
-  margin-top: 100px;
+  margin-top: 10px;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.5s;
@@ -561,6 +605,7 @@ h4 {
   display: flex;
   text-align: center;
   justify-content: center;
+  
 }
 .col-4 img {
   width: 50px;
@@ -617,7 +662,7 @@ color: green;}
 .omm img{
  height: 350px;
  width: 350px;
- padding-right: 90px;
+ padding-right: 20px;
  
 }
 .omm{
@@ -662,22 +707,31 @@ color: green;}
   border-radius: 25px;
   border-bottom-right-radius: 25px;
    margin-left: 1100px;
-   
+
   color: rgb(235, 238, 235);
   justify-content: center;
   align-self: self-end;
   display: flex;
   margin-top: 50px;
   
-
+  width: 40px;
+  height: 40px;
   border: 2px solid green;
   transition: 0.55s;
   padding: 10px;
+}
+#scroll-to-top{
+  position: fixed;
+  cursor: pointer;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
 }
      button:hover {
       background: green;
       color: wheat;
       }
+      
       
 .navbar {
         background: rgb(11, 70, 48);
@@ -722,6 +776,95 @@ color: green;}
       .navbar ul li:hover::after {
         width: 100%;
       }
+      .small-container{
+  
+  position: relative;
+  overflow: hidden;
+  margin: 90px;
+  width: 80%;
+  
+}
+
+.row3 {
+  display: flex;
+  transition: transform 0.5s ease;
+  justify-content: center;
+  margin-right: 250px;
+
+}
+
+.col-4 {
+  
+  flex-shrink: 0;
+  margin: 50px;
+  
+}
+
+.scroll-left, .scroll-right {
+  position: absolute;
+  top: -5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: #01b42a;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  
+}
+.scroll-left:hover, .scroll-right:hover{
+  background: none;
+}
+
+.scroll-left {
+  left: -1020px;
+}
+
+.scroll-right {
+  right: 1px;
+}
+.search-box{
+  position: absolute;
+  background: #fff;
+  height: 35px;
+  border-radius: 40px;
+  top: 4%;
+  left:20%;
+  padding: 10px;
+}
+
+
+.search-btn{
+  color: white;
+  float: right;
+  width:35px;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 50%;
+  background:#03c606;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #050404;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 35px;
+  width: 200px;
+}
+
 /* Media query for screens with a max-width of 700px */
 @media (max-width: 700px) {
   .background {
@@ -741,12 +884,13 @@ color: green;}
   position: absolute;
   color: white;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 500px;
 }
 .content h1 {
   font-size: 150px;
   margin-bottom: 200px;
   color: green;
+  margin-left: 50px;
 
 }
 .content p {
@@ -755,11 +899,12 @@ color: green;}
   color: white;
   font-size: 40px;
   line-height: 50px;
+  margin-left: 60px;
   
 }
 .content a {
   display: flex;
-  
+  position: fixed;
   width: 400px;
   height: 80px;
   background: green;
@@ -950,7 +1095,7 @@ h3 {
   padding-top: 70px;
   transition: 0.5s;
   width: 70px;
-  height: 100px;
+  height: 200px;
   justify-content: center;
   align-items: center;
   padding-right: 200px;
@@ -970,7 +1115,7 @@ h3 {
 .photo .box:hover {
   transform: translateY(-10px);
   color: rgb(10, 91, 23);
-  box-shadow: 20px 20px 20px rgb(10, 191, 46);
+  box-shadow: 5px 5px 20px 5px  #1be21b;
 }
 .photo2 .Message:hover {
   transform: translateY(-10px);
@@ -989,6 +1134,7 @@ h3 {
   align-items: center;
   padding-left: 100px;
   margin-right: 100px;
+  margin-left: 0;
   
 }
 .oo {
@@ -1036,7 +1182,7 @@ h4{
   width: 100px;
 }
 .blog{
-  padding-top: 1150px;
+  padding-top: 1350px;
   
   
 }
@@ -1062,7 +1208,8 @@ h4{
   color: gray;
   display: block;
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
+  padding-top: 10px;
   
 }
 .blog .img {
@@ -1119,7 +1266,6 @@ h4{
   display: flex;
   text-align: center;
   justify-content: center;
-  
   flex-direction: column;
 
 }
@@ -1240,7 +1386,9 @@ h5 {
   align-self: self-end;
   display: flex;
   margin-top: 0px;
-  font-size: 25px;
+  width: 80px;
+  height: 80px;
+  font-size: 45px;
  margin-top: 40px;
   border: 2px solid green;
   transition: 0.55s;
@@ -1291,7 +1439,7 @@ h5 {
         #menuList {
           transition: all 0.5s;
           margin-top: 210px;
-          width: 1240px;
+          width: 1243px;
           z-index: 1;
           height: 1000px;
           
@@ -1315,8 +1463,6 @@ h5 {
         background: rgb(11, 70, 48);
         background-position: bottom;
         background-size: cover;
-        
-        
       }
       .logo{
         width: 400px;
@@ -1325,7 +1471,7 @@ h5 {
           border: none;
           background: #05961f;
           height: 2px;
-          width: 900px;
+          width: 1054px;
         }
        .copy  {
           text-align: center;
@@ -1353,8 +1499,6 @@ h5 {
           margin-bottom: 10px;
           font-size: 30px;
         }
-        
-
         .container2 {
           display: flex;
           justify-content: space-between;
@@ -1365,8 +1509,6 @@ h5 {
           justify-content: center;
           width: 85px;
           padding-top: 2px;
-
-    
         }
         .lolo2 {
           padding-top: 33px;
@@ -1387,12 +1529,9 @@ h5 {
           padding-top: 35px;
           margin-top: -219px;
           padding-left: 200px;
-        
         }
         .lolo1 p {
           padding-top: 15px;
-          
-      
         }
         .footer {
           background: black;
@@ -1404,8 +1543,6 @@ h5 {
           padding: 300px;
           width: 1063px;
           margin-left: -400px;
-          
-          
         }
         .nav ul li a {
         text-decoration: none;
@@ -1418,17 +1555,117 @@ h5 {
         display: block;
         position: relative;
       }
+      .small-container{
+  position: relative;
+  width: 350%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.row3 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
 
-}    
-           
+.col-4 {
+  
+  width: 35%;
+  margin: 90px;
+  margin-left: px;
+  overflow: hidden;
+  
+  
+  
+}
+
+.scroll-left, .scroll-right {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-size: 100px;
+  background: none;
+  border: none;
+  color: #01b42a;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 40px;
+
+}
+.lowkey{
+  display: flex;
+}
+
+    
+.scroll-left {
+  left: -1090px;
+}
+
+.scroll-right {
+  right: 50px;
+}
+.social2{
+  background:  #0a4f0a;
+  width: 140px;
+  margin-left: 270px;
+  height: 10px;
+  border-radius: 25px;
+
+}   
+.search-box{
+  position: absolute;
+  background: #fff;
+  height: 55px;
+  width: 500px;
+  border-radius: 40px;
+  top: 15%;
+  margin-left: 340px;
+  padding: 10px;
+}
+
+
+.search-btn{
+  color: white;
+  float: right;
+  width:55px;
+  font-size: 15px;
+  height: 55px;
+  border-radius: 50%;
+  background:#03c606;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+
+}
+
+
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #050404;
+  font-size: 26px;
+  transition: 0.4s;
+  line-height: 55px;
+  width: 200px;
+}
+
+
+}              
+
 </style>
-   
   </head>
   <body>
     <section>
     <div class="background">
       <div class="navbar">
         <img src="logo80.png" class="logo" alt="Logo" />
+      
         <ul id="menuList">
           <li><a href="#">Home</a></li>
           <li><a href="docaboutus.html">About us</a></li>
@@ -1444,15 +1681,20 @@ h5 {
       <script>
         const menuList = document.getElementById("menuList");
         menuList.style.maxHeight = "0px";
-  
         function toggleMenu() {
           if (menuList.style.maxHeight == "0px") {
             menuList.style.maxHeight = "1200px";
           } else {
-            menuList.style.maxHeight = "0px";
+            menuList.style.maxHeight = "0px"; 
           }
-        }
+        } 
       </script>
+        <div class="search-box">
+          <input type="text" placeholder="Type to search" class="search-txt" class="search">
+         <a href="" class="search-btn">
+          <i class="fa fa-search"></i>
+         </a>
+              </div>
     <div class="content">
       <h1>DESIGN YOUR HOUSE</h1>
       <p>
@@ -1467,7 +1709,6 @@ h5 {
       <div class="omm"><img src="undraw_relaxing_at_home_re_mror.svg" ></div>
      
     </div>
-            
     <section class="Ourservice">
       <h1>Our Services</h1>
       <hr>
@@ -1498,6 +1739,7 @@ h5 {
           </p>
         </div>
       </div>
+      
     
     </section>
     <hr class="poloo"> 
@@ -1546,13 +1788,14 @@ h5 {
           </div>
          </div>
         </div>
+        <button id="scroll-to-top" style="display: none;">  <b>&#8593;</b></button>
       
       </section>
     <section class="photo">
       <div class="container">
         <div class="left">
           <div class="omg">
-            <img src="dee.jpg" alt="" />
+            <img src="spacejoy-RqO6kwm4tZY-unsplash(0).jpg" alt="" />
           </div>
         </div>
         <div general>
@@ -1629,9 +1872,70 @@ h5 {
       <div class="ear">
       <a href="blog.html">View All Post</a></div>
     </section>
-      <div class="testimonial">
+ 
         <div class="small-container">
-          <div class="row3">
+          <div class="row3">    
+         
+                    
+            <div class="col-4">
+              <span class="fa fa-quote-left checked"></span>
+              <p class="kon">
+                Haven transformed my living <br> room into a stunning oasis! 
+                Their <br>expert designers listened <br> attentively and delivered a 
+                customized <br> plan that exceeded my expectations
+              </p>
+              <div >
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+              </div>
+              <img src="user-3.png" />
+              <h5>Mabel Joe</h5>
+              
+            
+            <div class="col-4">
+              <span class="fa fa-quote-left checked"></span>
+              <p class="kon">
+                Haven transformed my living <br> room into a stunning oasis! 
+                Their <br>expert designers listened <br> attentively and delivered a 
+                customized <br> plan that exceeded my expectations
+              </p>
+              <div >
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+              </div>
+              <img src="user-3.png" />
+              <h5>Mabel Joe</h5>
+              
+            </div>
+            
+  
+              
+                
+            </div>
+            <div class="col-4">
+              <span class="fa fa-quote-left checked"></span>
+              <p class="kon">
+                Haven transformed my living <br> room into a stunning oasis! 
+                Their <br>expert designers listened <br> attentively and delivered a 
+                customized <br> plan that exceeded my expectations
+              </p>
+              <div >
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+              </div>
+              <img src="user-3.png" />
+              <h5>Mabel Joe</h5>
+              
+            </div>
             <div class="col-4">
               <span class="fa fa-quote-left checked"></span>
               <p class="kon">
@@ -1650,7 +1954,7 @@ h5 {
               <img src="user-1.png" />
               <h5>San Parker</h5>
             </div>
-            <div class="col-4">
+              <div class="col-4">
               <span class="fa fa-quote-left checked"></span>
   
               <p class="kon">
@@ -1684,16 +1988,80 @@ h5 {
               </div>
               <img src="user-3.png" />
               <h5>Mabel Joe</h5>
+              
+            </div>
+            <div class="col-4">
+              <span class="fa fa-quote-left checked"></span>
+              <p class="kon">
+                Haven's attention to detail  and <br> commitment 
+                to customer  satisfaction are <br> unparalleled.
+                 They turned my dream <br> kitchen into a reality! this is <br>
+                 now my favorite space!
+              </p>
+              <div>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star checked"></p>
+                <p class="fa fa-star clon"></p>
+              </div>
+              <img src="user-1.png" />
+              <h5>San Parker</h5>
             </div>
           </div>
+          <button class="scroll-left">&larr;</button>
+          <button class="scroll-right">&rarr;</button>
         </div>
-      </div>
-    <button id="scroll-to-top">  Top &#8593;</button>
-    <script>const scrollToTopButton = document.getElementById('scroll-to-top');
+         <script>
+         const testimonialContainer = document.querySelector('.small-container');
+const testimonialSlider = document.querySelector('.row3');
+const testimonialBoxes = document.querySelectorAll('.col-4');
+const scrollLeftBtn = document.querySelector('.scroll-left');
+const scrollRightBtn = document.querySelector('.scroll-right');
 
+let currentTestimonial = 0;
+
+scrollLeftBtn.addEventListener('click', () => {
+  currentTestimonial--;
+  updateSlider();
+});
+
+scrollRightBtn.addEventListener('click', () => {
+  currentTestimonial++;
+  updateSlider();
+});
+
+function updateSlider() {
+  if (currentTestimonial < 0) {
+    currentTestimonial = testimonialBoxes.length - 1;
+  } else if (currentTestimonial >= testimonialBoxes.length) {
+    currentTestimonial = 0;
+  }
+  testimonialSlider.style.transform = `translateX(${-currentTestimonial * 120 / testimonialBoxes.length }50%)`;
+}
+
+ 
+          </script>
+
+    <script>const scrollToTopButton = document.getElementById('scroll-to-top');
+      
       scrollToTopButton.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 80, behavior: 'smooth' });
       });
+  
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > window.innerHeight * 0.7) {
+    scrollToTopButton.style.display = 'block';
+  } else {
+    scrollToTopButton.style.display = 'none';
+  }
+});
+
+
+
+
+
       
       
       </script>
@@ -1710,7 +2078,7 @@ h5 {
       </div>
 
       <div class="lolo1">
-        <h7>USEFUI LINKS</h7>
+        <h7>&#8584; USEFUI LINKS</h7>
         <div class="nav">
           <ul>
             <li><a href="#">Coupons</a></li>
@@ -1739,6 +2107,6 @@ h5 {
       kunkun
     </p>
   </div>
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
